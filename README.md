@@ -39,16 +39,20 @@ Hobby only deploys commits from the GitHub account that owns the Vercel project.
 
 ## Custom domain (`asbcreativehybrid.co`)
 
-The domain is registered at Wix through December 2027. Keep it there. Point only the **website** records at Vercel. Do **not** change nameservers to Vercel — that would break Google mail (`@asbcreativehybrid.co`). Leave MX and SPF TXT records as they are.
+The domain is paid at **Namecheap**. Wix only hosted the site and currently holds the **nameservers** (`ns6.wixdns.net` / `ns7.wixdns.net`). Cancelling Wix does **not** cancel the Namecheap registration — but you must move DNS off Wix **before** you cancel, or the domain will stop resolving.
 
-1. In the Hobby project [Domains](https://vercel.com/soundandmoving-images/creative-hybrid-portfolio/settings/domains), add `asbcreativehybrid.co`. Accept the `www` alias if Vercel offers it.
-2. Copy the **A record** and **www CNAME** from that domain card. Newer projects sometimes use an IP other than `76.76.21.21` — use whatever the card shows.
-3. In Wix: **Account Settings → Domains → asbcreativehybrid.co → DNS Records**.
-   - Apex (`@` / blank host): delete the current Wix A records (`185.230.63.*`) and add one A record to the Vercel IP.
-   - `www`: change the CNAME from `cdn3.wixdns.net` to the Vercel CNAME target (often `cname.vercel-dns.com`).
-   - Do not edit nameservers, MX (`aspmx.l.google.com`), or the Google SPF / site-verification TXT records.
-4. Wait for Vercel to show a valid configuration and issue HTTPS. Until then, the site stays at [creative-hybrid-portfolio.vercel.app](https://creative-hybrid-portfolio.vercel.app).
-5. After it resolves, you can cancel the Wix **Premium plan** if you no longer need the Wix site. Keep the **domain** subscription. Keep **Business email** if you still use `@asbcreativehybrid.co`.
+Do this in order:
+
+1. In Namecheap, open **Domain List** and confirm `asbcreativehybrid.co` is there, with **Auto-Renew** on.
+2. In the Hobby project [Domains](https://vercel.com/soundandmoving-images/creative-hybrid-portfolio/settings/domains), add `asbcreativehybrid.co` and accept `www`. Copy the A record IP and www CNAME from that card (often `76.76.21.21` and `cname.vercel-dns.com` — use whatever the card shows).
+3. In Namecheap: **Manage → Nameservers → Namecheap BasicDNS** (`dns1.registrar-servers.com` / `dns2.registrar-servers.com`). Save.
+4. In Namecheap **Advanced DNS**, add:
+   - A record, host `@`, value = Vercel IP
+   - CNAME, host `www`, value = Vercel CNAME target
+   - MX records for Google (same as today: `aspmx.l.google.com` priority 10, then `alt1`–`alt4`)
+   - TXT, host `@`, `v=spf1 include:_spf.google.com ~all`
+5. Wait until Vercel shows a valid configuration and HTTPS. Confirm mail still works.
+6. Then cancel Wix Premium, Wix domain-connect, and Wix Business Email if you no longer need them. Keep paying Namecheap for the domain. If `@asbcreativehybrid.co` mail is billed through Wix’s Google bundle, keep that Google / Workspace billing separately or the mailbox can go away even though the domain stays yours.
 
 The first contact-form submission via FormSubmit sends a confirmation to `boydanthony58@gmail.com`. Confirm that email so messages arrive.
 
