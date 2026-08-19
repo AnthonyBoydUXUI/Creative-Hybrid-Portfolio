@@ -27,7 +27,7 @@ export function ContactForm() {
 
     setStatus("sending");
     try {
-      const response = await fetch("https://formsubmit.co/ajax/" + site.email, {
+      const response = await fetch("https://formsubmit.co/ajax/" + site.formsubmit, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
