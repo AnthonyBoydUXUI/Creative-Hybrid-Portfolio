@@ -9,7 +9,7 @@ export const site = {
   phoneHref: "+13144772394",
   linkedin: "https://www.linkedin.com/in/anthonyboyduxui",
   github: "https://github.com/AnthonyBoydUXUI",
-  url: "https://asbcreative.vercel.app",
+  url: "https://asbcreativehybrid.co",
   tagline: "Empathy. Creativity. Customer-centered. Connection.",
   description:
     "Anthony S. Boyd is a product service designer in Los Angeles. He designs purposeful experiences that empower people across digital and real-world touchpoints.",

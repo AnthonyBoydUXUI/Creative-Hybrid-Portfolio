@@ -320,6 +320,8 @@ export const tools = [
   "ChatGPT",
   "Claude & Claude Code",
   "Cursor",
+  "Codex",
+  "Lovable",
   "Midjourney",
   "Sora",
   "Kling",

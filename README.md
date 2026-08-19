@@ -37,6 +37,19 @@ This portfolio is sized for Vercel’s **Hobby** plan: $0/month, personal use, G
 
 Hobby only deploys commits from the GitHub account that owns the Vercel project. After you merge the pull request, open the project in Vercel and click **Deploy** once if Git did not auto-build.
 
+## Custom domain (`asbcreativehybrid.co`)
+
+The domain is registered at Wix through December 2027. Keep it there. Point only the **website** records at Vercel. Do **not** change nameservers to Vercel — that would break Google mail (`@asbcreativehybrid.co`). Leave MX and SPF TXT records as they are.
+
+1. In the Hobby project [Domains](https://vercel.com/soundandmoving-images/creative-hybrid-portfolio/settings/domains), add `asbcreativehybrid.co`. Accept the `www` alias if Vercel offers it.
+2. Copy the **A record** and **www CNAME** from that domain card. Newer projects sometimes use an IP other than `76.76.21.21` — use whatever the card shows.
+3. In Wix: **Account Settings → Domains → asbcreativehybrid.co → DNS Records**.
+   - Apex (`@` / blank host): delete the current Wix A records (`185.230.63.*`) and add one A record to the Vercel IP.
+   - `www`: change the CNAME from `cdn3.wixdns.net` to the Vercel CNAME target (often `cname.vercel-dns.com`).
+   - Do not edit nameservers, MX (`aspmx.l.google.com`), or the Google SPF / site-verification TXT records.
+4. Wait for Vercel to show a valid configuration and issue HTTPS. Until then, the site stays at [creative-hybrid-portfolio.vercel.app](https://creative-hybrid-portfolio.vercel.app).
+5. After it resolves, you can cancel the Wix **Premium plan** if you no longer need the Wix site. Keep the **domain** subscription. Keep **Business email** if you still use `@asbcreativehybrid.co`.
+
 The first contact-form submission via FormSubmit sends a confirmation to `boydanthony58@gmail.com`. Confirm that email so messages arrive.
 
 ## Content sources
