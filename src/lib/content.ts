@@ -442,6 +442,12 @@ export const modularCase = {
   ],
   studio:
     "The IMDb Creative Studio is a hybrid team of designers, design technologists, and program managers responsible for the design and implementation of IMDb’s custom advertising products. The team works with executives, sales, campaign managers, and internal partners across UX, QA, AdOps, App, AdTech, and marketing to invent, design, build, and launch advertising experiences across IMDb properties.",
+  images: [
+    {
+      src: "/media/maria-preview.jpg",
+      alt: "Figma Narrative Pitch Deck with Furiosa Custom Solutions frames and component pages.",
+    },
+  ],
 };
 
 export const mariaCase = {
@@ -459,8 +465,8 @@ export const mariaCase = {
       alt: "Maria campaign banner with Angelina Jolie, festival laurels, reviews, and a Book Tickets action.",
     },
     {
-      src: "/media/maria-preview.jpg",
-      alt: "Desktop preview still from the StudioCanal Maria video product.",
+      src: "/media/modular-preview.jpg",
+      alt: "IMDb homepage video wall for StudioCanal Maria with Book Tickets and the ad preview tool.",
     },
     {
       src: "/media/campaign-banner.jpg",
