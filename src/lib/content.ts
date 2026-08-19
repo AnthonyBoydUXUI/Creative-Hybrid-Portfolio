@@ -148,11 +148,13 @@ export const about = {
   headline: "Crafts connections.",
   quote: "Good design is unobtrusive.",
   quoteBy: "Dieter Rams",
-  body: [
+  teaser:
     "I’m a Product Service Designer passionate about crafting meaningful, customer-centered experiences both digitally and in the real world. Combining creative flair with analytical insight, military discipline, and a touch of fashion design, I bring a unique perspective to every project. I value trust, transparency, and empathetic problem-solving. Explore my portfolio to see my work, learn about my design process, and discover how we can collaborate to create impactful and inspiring designs together.",
-    "My path started in fashion — product development and styling with Guess Jeans, Yi Zhou Studio, A&O, and HauteLook. The Army Reserve taught me discipline, collaboration, and how to keep people whole under pressure. Those two educations still shape how I work: aesthetic judgment plus structure.",
-    "At IMDb Creative Studio I designed interactive advertising experiences for studios and brands — video walls, modular systems, and campaign craft across every device. I completed Amazon’s UX Design & Research apprenticeship along the way.",
-    "I’m now founder and product designer at OurnAI, shaping how people and companies work with intelligent tools. Off hours I draw from design philosophy, music, family, and Akira.",
+  body: [
+    "My creative journey began as a fashion designer, working with brands like Guess Jeans, Yi Zhou Studios, AAG, and HauteLook, where I developed skills in product development, and styling.",
+    "My military experience instilled mental discipline and a rigorous work ethic, shaping my approach to problem-solving and challenges.",
+    "Currently, I am expanding my expertise in Visual Communication and UX/UI design, utilizing methods like information architecture, wireframing, customer research, and rapid prototyping. I craft meaningful digital and tangible products with a focus on storytelling, systems thinking, and empathy.",
+    "In my free time, I enjoy spending time with my family and drawing inspiration from design philosophy, music, and my favorite anime Akira.",
   ],
   portrait: "/media/about-portrait.jpg",
   portraitAlt:

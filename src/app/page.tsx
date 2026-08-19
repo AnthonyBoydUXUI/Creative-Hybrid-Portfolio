@@ -47,7 +47,7 @@ export default function HomePage() {
             <h2 className="eyebrow" id="about-heading">
               About
             </h2>
-            <p className="lede">{about.body[0]}</p>
+            <p className="lede">{about.teaser}</p>
             <p style={{ marginTop: "1.25rem" }}>
               <Link className="btn btn-ghost" href="/about">
                 Read more
