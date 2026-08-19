@@ -44,7 +44,7 @@ The domain is paid at **Namecheap**. Wix only hosted the site and currently hold
 Do this in order:
 
 1. In Namecheap, open **Domain List** and confirm `asbcreativehybrid.co` is there, with **Auto-Renew** on.
-2. In Vercel **Add Domains**, enter `asbcreativehybrid.co`, leave **Redirect apex domains to www** checked, **Connect to an environment → Production**, then click **Add Domain**. On the next screen, copy the A record IP and the `www` CNAME from the domain card (often `76.76.21.21` and `cname.vercel-dns.com` — use whatever the card shows).
+2. Open the Vercel Domains page: [soundandmoving-images / creative-hybrid-portfolio / Domains](https://vercel.com/soundandmoving-images/creative-hybrid-portfolio/settings/domains). Click **Add Domain**, enter `asbcreativehybrid.co`, leave **Redirect apex domains to www** checked, **Connect to an environment → Production**, then click **Add Domain**. On the next screen, copy the A record IP and the `www` CNAME from the domain card (often `76.76.21.21` and `cname.vercel-dns.com` — use whatever the card shows).
 3. In Namecheap: **Manage → Nameservers → Namecheap BasicDNS** (`dns1.registrar-servers.com` / `dns2.registrar-servers.com`). Save.
 4. In Namecheap **Advanced DNS**, add:
    - A record, host `@`, value = Vercel IP
