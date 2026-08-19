@@ -166,22 +166,22 @@ export const about = {
 
 export const fashion = [
   {
-    src: "/media/fashion-tunic-1.jpg",
-    alt: "Black-and-white studio look: sleeveless white extended tunic, dark trousers, mid-stride.",
-    caption: "01 Extended Tunic",
-    meta: "ALEKSANDR capsule",
-  },
-  {
     src: "/media/fashion-tunic-2.jpg",
-    alt: "Look from the ALEKSANDR capsule collection.",
-    caption: "01 Extended Tunic",
-    meta: "ALEKSANDR capsule",
+    alt: "Male model in a sleeveless white extended tunic and white high-tops, industrial metal door behind him.",
+    caption: "S1 Extended Tunic",
+    meta: "ALEKSANDR · Capsule collection I designed",
   },
   {
     src: "/media/fashion-tunic-3.jpg",
-    alt: "Tunic and pant look from the ALEKSANDR capsule collection.",
-    caption: "01 Tunic & Fig.1 Pant",
-    meta: "ALEKSANDR capsule",
+    alt: "Female model in a sleeveless white extended tunic with an asymmetrical wrap front, industrial metal door behind her.",
+    caption: "S1 Extended Tunic",
+    meta: "ALEKSANDR · Capsule collection I designed",
+  },
+  {
+    src: "/media/fashion-tunic-1.jpg",
+    alt: "Black-and-white studio look: sleeveless white tunic, dark trousers, mid-stride.",
+    caption: "S1 Tunic & Fig.5 Pant",
+    meta: "ALEKSANDR · Capsule collection I designed",
   },
 ];
 
