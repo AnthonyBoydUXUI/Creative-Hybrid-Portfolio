@@ -44,13 +44,10 @@ export default function HomePage() {
             />
           </div>
           <div>
-            <p className="eyebrow" id="about-heading">
+            <h2 className="eyebrow" id="about-heading">
               About
-            </p>
-            <h2 className="display" style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}>
-              Seeking customer-centered design? I’m your designer.
             </h2>
-            <p className="lede">{about.body[0]}</p>
+            <p className="lede">{about.teaser}</p>
             <p style={{ marginTop: "1.25rem" }}>
               <Link className="btn btn-ghost" href="/about">
                 Read more
@@ -73,7 +70,7 @@ export default function HomePage() {
             </div>
             <Link href="/work">All projects</Link>
           </div>
-          <div style={{ display: "grid", gap: "1.1rem", gridTemplateColumns: "repeat(auto-fit, minmax(16rem, 1fr))" }}>
+          <div className="project-grid">
             {projects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}

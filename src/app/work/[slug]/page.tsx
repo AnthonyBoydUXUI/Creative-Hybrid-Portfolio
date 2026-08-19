@@ -242,6 +242,21 @@ function ModularBody() {
         <h2>About Creative Studio</h2>
         <p className="prose">{modularCase.studio}</p>
       </section>
+      <section>
+        <h2>System</h2>
+        <div style={{ display: "grid", gap: "1rem" }}>
+          {modularCase.images.map((image) => (
+            <Image
+              key={image.src}
+              src={image.src}
+              alt={image.alt}
+              width={1600}
+              height={1000}
+              style={{ width: "100%", height: "auto", borderRadius: 16 }}
+            />
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

@@ -19,7 +19,7 @@ export const projects: Project[] = [
     slug: "vehicle-onboarding",
     title: "Vehicle Onboarding App",
     subtitle: "Voice, safety, and personalization for new EV owners",
-    year: "2024",
+    year: "2025",
     role: "Product, UX, voice design",
     client: "Concept — Voltique",
     summary:
@@ -148,11 +148,13 @@ export const about = {
   headline: "Crafts connections.",
   quote: "Good design is unobtrusive.",
   quoteBy: "Dieter Rams",
+  teaser:
+    "I’m a Product Service Designer passionate about crafting meaningful, customer-centered experiences both digitally and in the real world. Combining creative flair with analytical insight, military discipline, and a touch of fashion design, I bring a unique perspective to every project. I value trust, transparency, and empathetic problem-solving. Explore my portfolio to see my work, learn about my design process, and discover how we can collaborate to create impactful and inspiring designs together.",
   body: [
-    "I’m a product service designer. I care about experiences that feel considered in the hand, on the screen, and in the room.",
-    "My path started in fashion — product development and styling with Guess Jeans, Yi Zhou Studio, A&O, and HauteLook. The Army Reserve taught me discipline, collaboration, and how to keep people whole under pressure. Those two educations still shape how I work: aesthetic judgment plus structure.",
-    "At IMDb Creative Studio I designed interactive advertising experiences for studios and brands — video walls, modular systems, and campaign craft across every device. I completed Amazon’s UX Design & Research apprenticeship along the way.",
-    "I’m now founder and product designer at OurnAI, shaping how people and companies work with intelligent tools. Off hours I draw from design philosophy, music, family, and Akira.",
+    "My creative journey began as a fashion designer, working with brands like Guess Jeans, Yi Zhou Studios, AAG, and HauteLook, where I developed skills in product development, and styling.",
+    "My military experience instilled mental discipline and a rigorous work ethic, shaping my approach to problem-solving and challenges.",
+    "Currently, I am expanding my expertise in Visual Communication and UX/UI design, utilizing methods like information architecture, wireframing, customer research, and rapid prototyping. I craft meaningful digital and tangible products with a focus on storytelling, systems thinking, and empathy.",
+    "In my free time, I enjoy spending time with my family and drawing inspiration from design philosophy, music, and my favorite anime Akira.",
   ],
   portrait: "/media/about-portrait.jpg",
   portraitAlt:
@@ -164,22 +166,22 @@ export const about = {
 
 export const fashion = [
   {
-    src: "/media/fashion-tunic-1.jpg",
-    alt: "Black-and-white studio look: sleeveless white extended tunic, dark trousers, mid-stride.",
-    caption: "01 Extended Tunic",
-    meta: "ALEKSANDR capsule",
-  },
-  {
     src: "/media/fashion-tunic-2.jpg",
-    alt: "Look from the ALEKSANDR capsule collection.",
-    caption: "01 Extended Tunic",
-    meta: "ALEKSANDR capsule",
+    alt: "Male model in a sleeveless white extended tunic and white high-tops, industrial metal door behind him.",
+    caption: "S1 Extended Tunic",
+    meta: "ALEKSANDR · Capsule collection I designed",
   },
   {
     src: "/media/fashion-tunic-3.jpg",
-    alt: "Tunic and pant look from the ALEKSANDR capsule collection.",
-    caption: "01 Tunic & Fig.1 Pant",
-    meta: "ALEKSANDR capsule",
+    alt: "Female model in a sleeveless white extended tunic with an asymmetrical wrap front, industrial metal door behind her.",
+    caption: "S1 Extended Tunic",
+    meta: "ALEKSANDR · Capsule collection I designed",
+  },
+  {
+    src: "/media/fashion-tunic-1.jpg",
+    alt: "Black-and-white studio look: sleeveless white tunic, dark trousers, mid-stride.",
+    caption: "S1 Tunic & Fig.5 Pant",
+    meta: "ALEKSANDR · Capsule collection I designed",
   },
 ];
 
@@ -367,14 +369,6 @@ export const voa = {
       alt: "Mobile app screen for charging or climate controls.",
     },
     {
-      src: "/media/voa-screen-1.jpg",
-      alt: "App interface card from the Voltique onboarding prototype.",
-    },
-    {
-      src: "/media/voa-screen-2.jpg",
-      alt: "App interface card from the Voltique onboarding prototype.",
-    },
-    {
       src: "/media/voa-screen-6.jpg",
       alt: "Compact mobile frame from the onboarding prototype.",
     },
@@ -450,6 +444,12 @@ export const modularCase = {
   ],
   studio:
     "The IMDb Creative Studio is a hybrid team of designers, design technologists, and program managers responsible for the design and implementation of IMDb’s custom advertising products. The team works with executives, sales, campaign managers, and internal partners across UX, QA, AdOps, App, AdTech, and marketing to invent, design, build, and launch advertising experiences across IMDb properties.",
+  images: [
+    {
+      src: "/media/maria-preview.jpg",
+      alt: "Figma Narrative Pitch Deck with Furiosa Custom Solutions frames and component pages.",
+    },
+  ],
 };
 
 export const mariaCase = {
@@ -467,8 +467,8 @@ export const mariaCase = {
       alt: "Maria campaign banner with Angelina Jolie, festival laurels, reviews, and a Book Tickets action.",
     },
     {
-      src: "/media/maria-preview.jpg",
-      alt: "Desktop preview still from the StudioCanal Maria video product.",
+      src: "/media/modular-preview.jpg",
+      alt: "IMDb homepage video wall for StudioCanal Maria with Book Tickets and the ad preview tool.",
     },
     {
       src: "/media/campaign-banner.jpg",
