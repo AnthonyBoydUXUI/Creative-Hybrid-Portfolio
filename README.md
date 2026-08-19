@@ -37,6 +37,23 @@ This portfolio is sized for Vercel’s **Hobby** plan: $0/month, personal use, G
 
 Hobby only deploys commits from the GitHub account that owns the Vercel project. After you merge the pull request, open the project in Vercel and click **Deploy** once if Git did not auto-build.
 
+## Custom domain (`asbcreativehybrid.co`)
+
+The domain is paid at **Namecheap**. Wix only hosted the site and currently holds the **nameservers** (`ns6.wixdns.net` / `ns7.wixdns.net`). Cancelling Wix does **not** cancel the Namecheap registration — but you must move DNS off Wix **before** you cancel, or the domain will stop resolving.
+
+Do this in order:
+
+1. In Namecheap, open **Domain List** and confirm `asbcreativehybrid.co` is there, with **Auto-Renew** on.
+2. Open the Vercel Domains page: [soundandmoving-images / creative-hybrid-portfolio / Domains](https://vercel.com/soundandmoving-images/creative-hybrid-portfolio/settings/domains). Click **Add Domain**, enter `asbcreativehybrid.co`, leave **Redirect apex domains to www** checked, **Connect to an environment → Production**, then click **Add Domain**. On the next screen, copy the A record IP and the `www` CNAME from the domain card (often `76.76.21.21` and `cname.vercel-dns.com` — use whatever the card shows).
+3. In Namecheap: **Manage → Nameservers → Namecheap BasicDNS** (`dns1.registrar-servers.com` / `dns2.registrar-servers.com`). Save.
+4. In Namecheap **Advanced DNS**, add:
+   - A record, host `@`, value = Vercel IP
+   - CNAME, host `www`, value = Vercel CNAME target
+   - MX records for Google (same as today: `aspmx.l.google.com` priority 10, then `alt1`–`alt4`)
+   - TXT, host `@`, `v=spf1 include:_spf.google.com ~all`
+5. Wait until Vercel shows a valid configuration and HTTPS. The public URL will be `https://www.asbcreativehybrid.co` (apex redirects to www). Confirm mail still works.
+6. Then cancel Wix Premium, Wix domain-connect, and Wix Business Email if you no longer need them. Keep paying Namecheap for the domain. If `@asbcreativehybrid.co` mail is billed through Wix’s Google bundle, keep that Google / Workspace billing separately or the mailbox can go away even though the domain stays yours.
+
 The first contact-form submission via FormSubmit sends a confirmation to `boydanthony58@gmail.com`. Confirm that email so messages arrive.
 
 ## Content sources

@@ -308,20 +308,20 @@ export const education = [
 
 export const tools = [
   "Figma",
-  "Sketch",
   "Miro",
   "Adobe Illustrator",
-  "Photoshop",
-  "After Effects",
   "Adobe Aero",
-  "Framer",
-  "Modo",
   "UsabilityHub",
   "ChatGPT",
+  "Claude",
+  "Claude Code",
+  "Cursor",
+  "Codex",
+  "Lovable",
   "Midjourney",
-  "Sora",
-  "Kling",
   "Google Whisk",
+  "GitHub",
+  "Vercel",
 ];
 
 export const voa = {
