@@ -321,6 +321,7 @@ export const tools = [
   "Codex",
   "Lovable",
   "Midjourney",
+  "ElevenLabs",
   "Google Whisk",
   "GitHub",
   "Vercel",
