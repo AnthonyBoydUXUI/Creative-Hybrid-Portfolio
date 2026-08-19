@@ -149,7 +149,7 @@ export const about = {
   quote: "Good design is unobtrusive.",
   quoteBy: "Dieter Rams",
   body: [
-    "I’m a product service designer. I care about experiences that feel considered in the hand, on the screen, and in the room.",
+    "I’m a Product Service Designer passionate about crafting meaningful, customer-centered experiences both digitally and in the real world. Combining creative flair with analytical insight, military discipline, and a touch of fashion design, I bring a unique perspective to every project. I value trust, transparency, and empathetic problem-solving. Explore my portfolio to see my work, learn about my design process, and discover how we can collaborate to create impactful and inspiring designs together.",
     "My path started in fashion — product development and styling with Guess Jeans, Yi Zhou Studio, A&O, and HauteLook. The Army Reserve taught me discipline, collaboration, and how to keep people whole under pressure. Those two educations still shape how I work: aesthetic judgment plus structure.",
     "At IMDb Creative Studio I designed interactive advertising experiences for studios and brands — video walls, modular systems, and campaign craft across every device. I completed Amazon’s UX Design & Research apprenticeship along the way.",
     "I’m now founder and product designer at OurnAI, shaping how people and companies work with intelligent tools. Off hours I draw from design philosophy, music, family, and Akira.",
