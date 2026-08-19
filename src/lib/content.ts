@@ -318,10 +318,14 @@ export const tools = [
   "Modo",
   "UsabilityHub",
   "ChatGPT",
+  "Claude & Claude Code",
+  "Cursor",
   "Midjourney",
   "Sora",
   "Kling",
   "Google Whisk",
+  "GitHub",
+  "Vercel",
 ];
 
 export const voa = {
