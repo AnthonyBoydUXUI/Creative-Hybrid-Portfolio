@@ -308,7 +308,6 @@ export const education = [
 
 export const tools = [
   "Figma",
-  "Sketch",
   "Miro",
   "Adobe Illustrator",
   "Adobe Aero",
