@@ -15,11 +15,11 @@ export function ProjectCard({ project }: { project: Project }) {
         />
       </div>
       <div className="card-body">
-        <p className="eyebrow" style={{ margin: 0 }}>
+        <p className="eyebrow card-meta">
           {project.year} · {project.role}
         </p>
-        <h3 style={{ margin: 0, fontSize: "1.25rem", letterSpacing: "-0.03em" }}>{project.title}</h3>
-        <p style={{ margin: 0, color: "var(--muted)" }}>{project.subtitle}</p>
+        <h3 className="card-title">{project.title}</h3>
+        <p className="card-sub">{project.subtitle}</p>
       </div>
     </Link>
   );

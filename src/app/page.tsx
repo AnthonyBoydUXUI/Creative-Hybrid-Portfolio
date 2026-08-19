@@ -70,7 +70,7 @@ export default function HomePage() {
             </div>
             <Link href="/work">All projects</Link>
           </div>
-          <div style={{ display: "grid", gap: "1.1rem", gridTemplateColumns: "repeat(auto-fit, minmax(16rem, 1fr))" }}>
+          <div className="project-grid">
             {projects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}
