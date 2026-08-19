@@ -25,11 +25,17 @@ npm run build
 npm start
 ```
 
-## Deploy on Vercel
+## Deploy on Vercel Hobby (free)
 
-1. Import this GitHub repository in [Vercel](https://vercel.com/new).
-2. Framework preset: Next.js. Build command `npm run build`. Output: default.
-3. After the first deploy, point a custom domain if you have one.
+This portfolio is sized for Vercel’s **Hobby** plan: $0/month, personal use, GitHub connected, HTTPS included. Do not start a Pro trial or add a credit card.
+
+1. Sign in at [vercel.com/signup](https://vercel.com/signup) with **GitHub** (`AnthonyBoydUXUI`). Hobby is the default personal plan.
+2. If Vercel offers a Pro trial, choose **Continue with Hobby** / skip the trial.
+3. Open [vercel.com/new](https://vercel.com/new) and import **AnthonyBoydUXUI/Creative-Hybrid-Portfolio**.
+4. Leave Root Directory as `.` and Framework as **Next.js**. Deploy.
+5. After it is live you get a free `*.vercel.app` URL. A custom domain is optional and also free on Hobby if you already own one.
+
+Hobby only deploys commits from the GitHub account that owns the Vercel project. After you merge the pull request, open the project in Vercel and click **Deploy** once if Git did not auto-build.
 
 The first contact-form submission via FormSubmit sends a confirmation to `boydanthony58@gmail.com`. Confirm that email so messages arrive.
 
