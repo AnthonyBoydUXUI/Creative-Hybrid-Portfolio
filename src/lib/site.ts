@@ -4,7 +4,7 @@ export const site = {
   person: "Anthony S. Boyd",
   title: "Product Service Designer",
   location: "Los Angeles, California",
-  email: "boydanthony58@gmail.com",
+  email: "hello@asbcreativehybrid.com",
   phoneDisplay: "314-477-2394",
   phoneHref: "+13144772394",
   linkedin: "https://www.linkedin.com/in/anthonyboyduxui",
