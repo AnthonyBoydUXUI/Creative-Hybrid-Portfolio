@@ -367,14 +367,6 @@ export const voa = {
       alt: "Mobile app screen for charging or climate controls.",
     },
     {
-      src: "/media/voa-screen-1.jpg",
-      alt: "App interface card from the Voltique onboarding prototype.",
-    },
-    {
-      src: "/media/voa-screen-2.jpg",
-      alt: "App interface card from the Voltique onboarding prototype.",
-    },
-    {
       src: "/media/voa-screen-6.jpg",
       alt: "Compact mobile frame from the onboarding prototype.",
     },
