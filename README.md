@@ -54,7 +54,14 @@ Do this in order:
 4. In Vercel, **Refresh** until both `.com` rows are Valid Configuration. Public URL: `https://www.asbcreativehybrid.com`.
 5. You can remove `asbcreativehybrid.co` from Vercel. Cancel Wix when you no longer need the old site or the `.co` name.
 
-The first contact-form submission via FormSubmit sends a confirmation to `boydanthony58@gmail.com`. Confirm that email so messages arrive.
+The first contact-form submission via FormSubmit sends a confirmation to `hello@asbcreativehybrid.com`. That address is independent of Wix.
+
+In Namecheap: **Domain List → asbcreativehybrid.com → Redirect Email** (or Email Forwarding). Add:
+
+- Alias: `hello`
+- Forward to: an inbox you will still have after Wix is gone (Gmail is not Wix — `boydanthony58@gmail.com` still works if you keep that Google account)
+
+Then open https://www.asbcreativehybrid.com/contact, send one test, and confirm the FormSubmit email that lands in the forwarded inbox.
 
 ## Content sources
 
