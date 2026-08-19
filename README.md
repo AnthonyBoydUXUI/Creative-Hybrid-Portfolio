@@ -44,10 +44,10 @@ The domain is paid at **Namecheap**. Wix only hosted the site and currently hold
 Do this in order:
 
 1. In Namecheap, open **Domain List** and confirm `asbcreativehybrid.co` is there, with **Auto-Renew** on.
-2. Open the Vercel Domains page: [soundandmoving-images / creative-hybrid-portfolio / Domains](https://vercel.com/soundandmoving-images/creative-hybrid-portfolio/settings/domains). Click **Add Domain**, enter `asbcreativehybrid.co`, leave **Redirect apex domains to www** checked, **Connect to an environment → Production**, then click **Add Domain**. On the next screen, copy the A record IP and the `www` CNAME from the domain card (often `76.76.21.21` and `cname.vercel-dns.com` — use whatever the card shows).
+2. Open the Vercel Domains page: [soundandmoving-images / creative-hybrid-portfolio / Domains](https://vercel.com/soundandmoving-images/creative-hybrid-portfolio/settings/domains). Vercel may say “update at Wix” because nameservers still point at Wix. Ignore that if you are leaving Wix — add the records at Namecheap instead. For the apex, the A record is **Name `@`, Value `216.198.79.1`**. Also open **www.asbcreativehybrid.co → View DNS configuration** and copy that CNAME (use the exact value on the card, often `cname.vercel-dns.com`).
 3. In Namecheap: **Manage → Nameservers → Namecheap BasicDNS** (`dns1.registrar-servers.com` / `dns2.registrar-servers.com`). Save.
 4. In Namecheap **Advanced DNS**, add:
-   - A record, host `@`, value = Vercel IP
+   - A record, host `@`, value `216.198.79.1`
    - CNAME, host `www`, value = Vercel CNAME target
    - MX records for Google (same as today: `aspmx.l.google.com` priority 10, then `alt1`–`alt4`)
    - TXT, host `@`, `v=spf1 include:_spf.google.com ~all`
