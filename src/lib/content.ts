@@ -19,7 +19,7 @@ export const projects: Project[] = [
     slug: "vehicle-onboarding",
     title: "Vehicle Onboarding App",
     subtitle: "Voice, safety, and personalization for new EV owners",
-    year: "2024",
+    year: "2025",
     role: "Product, UX, voice design",
     client: "Concept — Voltique",
     summary:
