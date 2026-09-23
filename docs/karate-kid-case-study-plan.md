@@ -53,9 +53,9 @@ Display title on the case study: **Karate Kid: Legends × IMDb**. Subtitle: **In
 5. Designing beyond the screen (asset pipeline + original hands art)  
 6. Designing for implementation (Design × Design Technology)  
 7. The same training. Different input. (desktop supplied; mobile described from role, not fabricated screens)  
-8. From initial build to final production (original concepts → official CS page + Vimeo)  
-9. Visual project timeline (Apr 2025 → 2026)  
-10. From initial build to recognized campaign (public CS facts only), including post-handoff impact: 6 languages / 10 EU+LATAM countries, quoted from the official Creative Studio page and attributed as finished-campaign reference — not personal metrics  
+8. From initial build to production (collaborative continued production across Design + Design Technology)  
+9. Visual project timeline: April 2025 Initial Experience → April 2025 Design × Design Technology → 2025 Continued Production → 2025 Campaign Launch → 2026 Silver ADDY Recognition  
+10. From initial build to recognized campaign (public CS facts only), including finished-campaign impact as production continued: 6 languages / 10 EU+LATAM countries, quoted from the official Creative Studio page  
 11. My contribution (April 2025)  
 12. Credits + transparency + external links  
 
@@ -140,10 +140,10 @@ Karate Kid, IMDb, Sony Pictures, and Columbia Pictures marks belong to their own
 ## Authorship rules
 
 - Contribution window: **April 2025**.  
-- Final campaign: **2025**, completed by other IMDb Creative Studio designers and Design Technology after an internal handoff.  
+- Continued production: **2025**, IMDb Creative Studio Design + Design Technology.  
 - Recognition: **2026 Silver ADDY for the resulting campaign** — never “I won” / “my design won.”  
 - Design Technology collaboration, unnamed.  
-- Vimeo and official CS page = post-handoff production.
+- Vimeo and official CS page = finished campaign as production continued.
 
 ## Open questions
 

@@ -23,7 +23,7 @@ export const projects: Project[] = [
     role: "Product / UX / Visual Design",
     client: "IMDb Creative Studio · Sony Pictures / Columbia Pictures",
     summary:
-      "I worked on the initial design and build of the Karate Kid: Legends interactive experience as part of IMDb Creative Studio at Amazon, developing the game mechanics, interaction system and supporting production assets with Design Technology. I then handed the work to other designers on the Creative Studio team and the Design Technologist I was collaborating with as production continued.",
+      "I developed the initial experience, game mechanics, interaction system, and supporting assets as part of IMDb Creative Studio, working closely with Design Technology. As the campaign progressed into production, the work continued collaboratively across the IMDb Creative Studio design and Design Technology teams.",
     thumbnail: "/media/karate-kid/tile-expanded.jpg",
     thumbnailAlt:
       "Original April 2025 desktop concept: expanded IMDb Video Wall+ for Karate Kid: Legends, with Play the Game, Videos, Characters, and Book Tickets above the homepage rail.",
@@ -510,7 +510,7 @@ export const karateKidCase = {
       value: "Initial experience · game mechanics · interaction design · production assets · Design Technology collaboration",
     },
     { label: "Platform", value: "IMDb Video Wall+ · web + mobile" },
-    { label: "Final campaign", value: "IMDb Creative Studio · 2025" },
+    { label: "Continued production", value: "IMDb Creative Studio Design + Design Technology · 2025" },
     { label: "Recognition", value: "Silver ADDY · 2026 · resulting campaign" },
   ],
   opportunity:
@@ -566,14 +566,14 @@ export const karateKidCase = {
     "The experience required close collaboration between design and Design Technology. I worked through the mechanics, states, visual behaviors, and supporting assets while partnering with Design Technology to translate the concept into an interactive experience that could live within IMDb’s advertising environment.",
   responsive:
     "Desktop used keyboard and a wider Video Wall+ canvas. Mobile kept the same Precision → Balance → Memory path with touch targets at the thumb edge, a tighter hierarchy, and the IMDb rail still in view — adapting the interaction model rather than shrinking the desktop layout.",
-  handoff:
-    "As production continued, I handed the experience to other designers on the IMDb Creative Studio team and the Design Technologist I was working with. The finished campaign retained the central Precision, Balance, and Memory training framework as those teammates refined and completed the final execution.",
+  production:
+    "I developed the initial experience, game mechanics, interaction system, and supporting assets as part of IMDb Creative Studio, working closely with Design Technology. As the campaign progressed into production, the work continued collaboratively across the IMDb Creative Studio design and Design Technology teams.",
   timelineNote:
-    "My April 2025 work established the initial experience design, gameplay mechanics, and supporting assets while I was part of IMDb Creative Studio at Amazon. I then handed the project to other designers on the team and the Design Technologist I was collaborating with. The resulting campaign was subsequently recognized with a Silver ADDY in 2026.",
+    "The work moved from the April 2025 initial experience and Design × Design Technology collaboration into continued production across IMDb Creative Studio Design + Design Technology, then to campaign launch in 2025. In 2026, the resulting campaign received Silver ADDY recognition.",
   outcome:
-    "I worked on the foundational experience, game mechanics, and production assets in April 2025 as part of IMDb Creative Studio at Amazon, collaborating with Design Technology. I then handed the work to other designers on the team and the Design Technologist I was working with as they carried the experience through final production. The finished campaign retained the core Precision, Balance, and Memory training structure documented in my original work. In 2026, the resulting campaign received a Silver ADDY at the Los Angeles American Advertising Awards.",
+    "I developed the initial experience, game mechanics, interaction system, and supporting assets as part of IMDb Creative Studio, working closely with Design Technology. As the campaign progressed into production, the work continued collaboratively across the IMDb Creative Studio design and Design Technology teams. The finished campaign retained the core Precision, Balance, and Memory training structure from that initial work. In 2026, the resulting campaign received Silver ADDY recognition at the Los Angeles American Advertising Awards.",
   impactIntro:
-    "The figures below describe the finished campaign after it moved to other designers on the IMDb Creative Studio team — published by IMDb Creative Studio, not as personal performance metrics.",
+    "The figures below describe the finished campaign as production continued across IMDb Creative Studio Design + Design Technology — published by IMDb Creative Studio, not as personal performance metrics.",
   impactStats: [
     { stat: "6", label: "Languages, launched simultaneously" },
     { stat: "10", label: "Countries across Europe and LATAM" },
@@ -616,10 +616,10 @@ export const karateKidCase = {
     "Design Technology collaboration",
     "Presale design",
     "Early production development",
-    "Handoff to Creative Studio designers and Design Technology",
+    "Continued production with Creative Studio Design + Design Technology",
   ],
   transparency:
-    "This case study focuses on the original experience design, initial build, game mechanics, and production assets I contributed at IMDb Creative Studio in April 2025, as part of the Amazon team. I developed the experience with Design Technology, then handed it to other designers on the Creative Studio team and the Design Technologist I was collaborating with as production continued.",
+    "This case study focuses on the initial experience, game mechanics, interaction system, and supporting assets I developed at IMDb Creative Studio in April 2025, working closely with Design Technology. As the campaign progressed into production, the work continued collaboratively across the IMDb Creative Studio design and Design Technology teams.",
   images: {
     desktopExpanded: {
       src: "/media/karate-kid/desktop-expanded.jpg",
