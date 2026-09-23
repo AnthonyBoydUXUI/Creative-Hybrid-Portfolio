@@ -498,8 +498,8 @@ export const karateKidCase = {
   displayTitle: "Karate Kid: Legends × IMDb",
   eyebrow: "Interactive Experience · April 2025",
   finishedCampaign: "https://imdbcreativestudio.com/home/karate-kid",
-  finishedVideo: "https://vimeo.com/1147528182",
-  finishedVideoEmbed: "https://player.vimeo.com/video/1147528182",
+  finishedVideo: "https://vimeo.com/1142251482?fl=pl&fe=vl",
+  finishedVideoEmbed: "https://player.vimeo.com/video/1142251482",
   heroMeta: [
     { label: "Role", value: "Product / UX / Visual Designer" },
     { label: "Timeline", value: "April 2025" },
