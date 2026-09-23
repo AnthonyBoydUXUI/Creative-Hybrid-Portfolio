@@ -54,9 +54,7 @@ export function KarateKidBody() {
           Watch the final production
         </a>
       </p>
-      <p className="kk-link-note">
-        Both links open IMDb Creative Studio’s completed 2025 campaign — the finished production as work continued across Design + Design Technology.
-      </p>
+      <p className="kk-link-note">Finished campaign references from IMDb Creative Studio.</p>
 
       <section>
         <h2>From watching to participating</h2>
@@ -186,32 +184,17 @@ export function KarateKidBody() {
             sizes="(max-width: 800px) 100vw, 68rem"
             style={{ width: "100%", height: "auto" }}
           />
-          <figcaption>Hand-pose strip I created for interaction and animation states.</figcaption>
+          <figcaption>Hand-pose strip</figcaption>
         </figure>
         <div className="kk-objects">
-          <Frame src={kk.images.studioDummy.src} alt={kk.images.studioDummy.alt} caption="Wooden dummy I created" />
-          <Frame src={kk.images.studioBall.src} alt={kk.images.studioBall.alt} caption="Balance ball I created" />
-          <Frame src={kk.images.studioStick.src} alt={kk.images.studioStick.alt} caption="Staff I created" />
+          <Frame src={kk.images.studioDummy.src} alt={kk.images.studioDummy.alt} caption="Wooden dummy" />
+          <Frame src={kk.images.studioBall.src} alt={kk.images.studioBall.alt} caption="Balance ball" />
+          <Frame src={kk.images.studioStick.src} alt={kk.images.studioStick.alt} caption="Staff" />
         </div>
         <Frame
           src={kk.images.sourceHands.src}
           alt={kk.images.sourceHands.alt}
-          caption="Wireframe hands I created for interaction states."
-        />
-      </section>
-
-      <section>
-        <h2>Designing for implementation</h2>
-        <p className="prose">{kk.collaboration}</p>
-        <Flow
-          items={[
-            "Experience idea",
-            "Interaction rules",
-            "Game mechanics",
-            "Asset requirements",
-            "Design Technology collaboration",
-            "Working experience",
-          ]}
+          caption="Wireframe hands"
         />
       </section>
 
@@ -265,15 +248,6 @@ export function KarateKidBody() {
       <section>
         <h2>From initial build to production</h2>
         <p className="prose">{kk.production}</p>
-        <Flow
-          items={[
-            "April 2025 — Initial Experience",
-            "April 2025 — Design × Design Technology",
-            "2025 — Continued Production",
-            "2025 — Campaign Launch",
-            "2026 — Silver ADDY Recognition",
-          ]}
-        />
         <Frame
           src={kk.images.keyArt.src}
           alt={kk.images.keyArt.alt}
@@ -294,7 +268,6 @@ export function KarateKidBody() {
             <a href={kk.finishedVideo} target="_blank" rel="noreferrer">
               Watch the final production on Vimeo
             </a>
-            . I did not produce this finished edit; it documents the campaign as production continued across IMDb Creative Studio Design + Design Technology.
           </p>
         </div>
       </section>
@@ -328,13 +301,10 @@ export function KarateKidBody() {
             <p>Resulting campaign</p>
           </li>
         </ol>
-        <p className="prose">{kk.timelineNote}</p>
       </section>
 
       <section>
-        <h2>From initial build to recognized campaign</h2>
-        <p className="prose">{kk.outcome}</p>
-        <h3>Impact of the finished campaign</h3>
+        <h2>Impact of the finished campaign</h2>
         <p className="prose">{kk.impactIntro}</p>
         <div className="kk-impact">
           {kk.impactStats.map((item) => (
@@ -346,9 +316,6 @@ export function KarateKidBody() {
             </div>
           ))}
         </div>
-        <p className="prose" style={{ marginTop: "1rem" }}>
-          Markets: {kk.impactCountries}.
-        </p>
         <blockquote className="kk-quote">
           {kk.impactQuote.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
@@ -359,16 +326,9 @@ export function KarateKidBody() {
                 {kk.impactSourceLabel}
               </a>
             </cite>
+            <span> · {kk.impactCategory}</span>
           </footer>
         </blockquote>
-        <ul>
-          {kk.publicFacts.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
-        <p className="prose" style={{ color: "var(--muted)" }}>
-          Campaign outcomes above are taken from the public IMDb Creative Studio case. They describe the finished production as work continued across Design + Design Technology — not a personal award or personal launch metric.
-        </p>
       </section>
 
       <section>
@@ -381,48 +341,6 @@ export function KarateKidBody() {
         </ul>
       </section>
 
-      <section>
-        <h2>Credits</h2>
-        <dl className="kk-credits">
-          <div>
-            <dt>Project</dt>
-            <dd>Karate Kid: Legends</dd>
-          </div>
-          <div>
-            <dt>Studio / advertiser</dt>
-            <dd>Sony Pictures / Columbia Pictures</dd>
-          </div>
-          <div>
-            <dt>Creative / advertising team</dt>
-            <dd>IMDb Creative Studio / Amazon</dd>
-          </div>
-          <div>
-            <dt>My role</dt>
-            <dd>Product / UX / Visual Designer</dd>
-          </div>
-          <div>
-            <dt>My contribution</dt>
-            <dd>April 2025</dd>
-          </div>
-          <div>
-            <dt>Continued production</dt>
-            <dd>IMDb Creative Studio Design + Design Technology · 2025</dd>
-          </div>
-          <div>
-            <dt>Final campaign recognition</dt>
-            <dd>Silver ADDY · 2026</dd>
-          </div>
-        </dl>
-        <p className="prose">{kk.transparency}</p>
-        <p className="kk-links">
-          <a className="btn btn-primary" href={kk.finishedCampaign} target="_blank" rel="noreferrer">
-            Explore the finished campaign
-          </a>
-          <a className="btn btn-ghost" href={kk.finishedVideo} target="_blank" rel="noreferrer">
-            Watch the final production
-          </a>
-        </p>
-      </section>
     </div>
   );
 }
