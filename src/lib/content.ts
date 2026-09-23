@@ -561,8 +561,9 @@ export const karateKidCase = {
     "Final completion",
   ],
   assetsLead: [
-    "Sony Pictures / Columbia Pictures needed an interactive campaign experience that could support motion, feedback, and multiple gameplay states. I created and prepared source objects and sprite frames for implementation — including 3D assets and original hand-pose artwork — and worked closely with Design Technology to translate the design into build-ready requirements.",
-    "I also created the game mechanics and background imagery.",
+    "Sony Pictures / Columbia Pictures needed an interactive campaign experience that could support motion, feedback, and multiple gameplay states across three distinct training challenges. I designed the game mechanics for each stage and created the visual environments that framed those interactions, including the stage-specific backgrounds, spatial compositions, and supporting scene elements used throughout the experience.",
+    "I also created and prepared implementation-ready source objects, sprite frames, 3D assets, and original hand-pose artwork, then collaborated closely with Design Technology to translate the experience into practical build requirements.",
+    "Several of the environmental concepts and background treatments developed during this phase were carried forward and refined in the final production, helping preserve continuity between the original interaction design and the launched experience.",
   ],
   collaboration:
     "The experience required close collaboration between design and Design Technology. I worked through the mechanics, states, visual behaviors, and supporting assets while partnering with Design Technology to translate the concept into an interactive experience that could live within IMDb’s advertising environment.",
@@ -670,11 +671,11 @@ export const karateKidCase = {
     },
     sourceHands: {
       src: "/media/karate-kid/source-hands.png",
-      alt: "Original production source art: two wireframe hands in open and two-finger poses, prepared for interaction states.",
+      alt: "Wireframe hands I created: open and two-finger poses prepared for interaction states.",
     },
     handSprite: {
       src: "/media/karate-kid/hand-sprite.png",
-      alt: "Hand-pose sprite strip: a sequence of open, pointing, and angled hands prepared for interaction and animation states.",
+      alt: "Hand-pose sprite strip I created: a sequence of open, pointing, and angled hands for interaction and animation states.",
     },
     memoryIntro: {
       src: "/media/karate-kid/memory-intro.jpg",
@@ -718,15 +719,15 @@ export const karateKidCase = {
     },
     studioDummy: {
       src: "/media/karate-kid/studio-dummy.jpg",
-      alt: "Wooden dummy source object created and prepared for the Precision challenge.",
+      alt: "Wooden dummy I created as source art for the Precision challenge.",
     },
     studioBall: {
       src: "/media/karate-kid/studio-ball.jpg",
-      alt: "Leather ball source object created and prepared for the Balance challenge.",
+      alt: "Balance ball I created as source art for the Balance challenge.",
     },
     studioStick: {
       src: "/media/karate-kid/studio-stick.jpg",
-      alt: "Wooden staff source object created and prepared for the Balance challenge.",
+      alt: "Wooden staff I created as source art for the Balance challenge.",
     },
     keyArt: {
       src: "/media/karate-kid/film-key-art.jpg",

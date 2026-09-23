@@ -102,7 +102,7 @@ Display title on the case study: **Karate Kid: Legends × IMDb**. Subtitle: **In
 - Named collaborators  
 - Campaign metrics beyond the public CS page  
 - Authorship of the finished Vimeo edit  
-- Personal authorship of studio-supplied 3D objects
+- Dummy, ball, staff, and hand-pose artwork are original assets created for this work
 
 ## Interactive demonstrations
 
