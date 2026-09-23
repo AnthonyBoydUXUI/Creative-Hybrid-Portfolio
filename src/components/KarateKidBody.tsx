@@ -169,7 +169,11 @@ export function KarateKidBody() {
 
       <section>
         <h2>Designing beyond the screen</h2>
-        <p className="prose">{kk.assetsLead}</p>
+        <div className="prose">
+          {kk.assetsLead.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
         <Flow
           items={["Source art", "Asset separation", "Frame / sprite preparation", "Interaction states", "Implementation"]}
         />
@@ -185,9 +189,9 @@ export function KarateKidBody() {
           <figcaption>Historical hand-pose strip prepared for interaction and animation states.</figcaption>
         </figure>
         <div className="kk-objects">
-          <Frame src={kk.images.studioDummy.src} alt={kk.images.studioDummy.alt} caption="Studio-provided dummy" />
-          <Frame src={kk.images.studioBall.src} alt={kk.images.studioBall.alt} caption="Studio-provided ball" />
-          <Frame src={kk.images.studioStick.src} alt={kk.images.studioStick.alt} caption="Studio-provided staff" />
+          <Frame src={kk.images.studioDummy.src} alt={kk.images.studioDummy.alt} caption="3D source object · dummy" />
+          <Frame src={kk.images.studioBall.src} alt={kk.images.studioBall.alt} caption="3D source object · ball" />
+          <Frame src={kk.images.studioStick.src} alt={kk.images.studioStick.alt} caption="3D source object · staff" />
         </div>
         <Frame
           src={kk.images.sourceHands.src}
