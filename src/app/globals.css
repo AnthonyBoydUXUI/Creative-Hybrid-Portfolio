@@ -790,6 +790,42 @@ select {
   background: var(--bg-elev);
 }
 
+.kk-impact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.kk-impact > div {
+  padding: 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--bg-elev);
+}
+
+.kk-quote {
+  margin: 1.25rem 0 0;
+  padding: 1.2rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--bg-elev);
+}
+
+.kk-quote p + p {
+  margin-top: 0.85rem;
+}
+
+.kk-quote footer {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.kk-quote cite {
+  font-style: normal;
+}
+
 .kk-credits {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));

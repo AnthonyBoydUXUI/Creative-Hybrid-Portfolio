@@ -322,13 +322,40 @@ export function KarateKidBody() {
       <section>
         <h2>From initial build to recognized campaign</h2>
         <p className="prose">{kk.outcome}</p>
+        <h3>Impact of the finished campaign</h3>
+        <p className="prose">{kk.impactIntro}</p>
+        <div className="kk-impact">
+          {kk.impactStats.map((item) => (
+            <div key={item.label}>
+              <p className="display" style={{ fontSize: "2.4rem", margin: 0 }}>
+                {item.stat}
+              </p>
+              <p style={{ margin: "0.4rem 0 0", color: "var(--muted)" }}>{item.label}</p>
+            </div>
+          ))}
+        </div>
+        <p className="prose" style={{ marginTop: "1rem" }}>
+          Markets: {kk.impactCountries}.
+        </p>
+        <blockquote className="kk-quote">
+          {kk.impactQuote.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+          <footer>
+            <cite>
+              <a href={kk.finishedCampaign} target="_blank" rel="noreferrer">
+                {kk.impactSourceLabel}
+              </a>
+            </cite>
+          </footer>
+        </blockquote>
         <ul>
           {kk.publicFacts.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
         <p className="prose" style={{ color: "var(--muted)" }}>
-          Campaign outcomes above are taken from the public IMDb Creative Studio case. They describe the finished production, not a personal award.
+          Campaign outcomes above are taken from the public IMDb Creative Studio case. They describe the finished production after handoff, not a personal award or personal launch metric.
         </p>
       </section>
 

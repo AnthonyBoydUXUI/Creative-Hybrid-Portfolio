@@ -572,11 +572,24 @@ export const karateKidCase = {
     "My work preceded the final production. I contributed to the initial experience design, gameplay mechanics, and supporting assets in April 2025. Following my handoff, IMDb Creative Studio continued developing and refining the campaign. The resulting experience was subsequently recognized with a Silver ADDY in 2026.",
   outcome:
     "I worked on the foundational experience, game mechanics, and production assets in April 2025, collaborating with Design Technology before the project transitioned to the continuing production team. IMDb Creative Studio subsequently evolved and completed the experience for its international campaign. The final production retained the core Precision, Balance, and Memory training structure documented in my original work. In 2026, the resulting campaign received a Silver ADDY at the Los Angeles American Advertising Awards.",
+  impactIntro:
+    "The figures below describe the finished campaign after handoff — published by IMDb Creative Studio, not as personal performance metrics.",
+  impactStats: [
+    { stat: "6", label: "Languages, launched simultaneously" },
+    { stat: "10", label: "Countries across Europe and LATAM" },
+    { stat: "3", label: "Training games in one system" },
+  ],
+  impactCountries:
+    "UK, Spain, Mexico, Brazil, Germany, France, Netherlands, Switzerland, Austria, and Ireland",
+  impactQuote: [
+    "Launched our fully localized gamified experience simultaneously in 6 languages across 10 countries in the EU and LATAM (UK, Spain, Mexico, Brazil, Germany, France, Netherlands, Switzerland, Austria, and Ireland).",
+    "Pairing addictive mini-games with rich character galleries and exclusive video content, it created a seamless bridge between interactive training and blockbuster hype, bringing discipline, focus, and a whole lot of “wax on, wax off” to fans worldwide.",
+  ],
+  impactSourceLabel: "IMDb Creative Studio — Karate Kid: Legends",
   publicFacts: [
     "Web and mobile Video Wall+ campaign",
     "Precision, Memory, and Balance training games",
-    "Localized in 6 languages",
-    "Launched in 10 countries across Europe and LATAM",
+    "Localized in 6 languages across 10 countries in the EU and LATAM",
     "Silver ADDY, 2026 Los Angeles American Advertising Awards",
     "Category: Web Banner Ad / Website Takeover",
   ],

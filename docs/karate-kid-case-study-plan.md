@@ -55,7 +55,7 @@ Display title on the case study: **Karate Kid: Legends × IMDb**. Subtitle: **In
 7. The same training. Different input. (desktop supplied; mobile described from role, not fabricated screens)  
 8. From initial build to final production (original concepts → official CS page + Vimeo)  
 9. Visual project timeline (Apr 2025 → 2026)  
-10. From initial build to recognized campaign (public CS facts only)  
+10. From initial build to recognized campaign (public CS facts only), including post-handoff impact: 6 languages / 10 EU+LATAM countries, quoted from the official Creative Studio page and attributed as finished-campaign reference — not personal metrics  
 11. My contribution (April 2025)  
 12. Credits + transparency + external links  
 
