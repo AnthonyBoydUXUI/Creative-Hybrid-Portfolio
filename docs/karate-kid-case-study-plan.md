@@ -140,7 +140,7 @@ Karate Kid, IMDb, Sony Pictures, and Columbia Pictures marks belong to their own
 ## Authorship rules
 
 - Contribution window: **April 2025**.  
-- Final campaign: **2025**, continuing IMDb Creative Studio team.  
+- Final campaign: **2025**, completed by other IMDb Creative Studio designers and Design Technology after an internal handoff.  
 - Recognition: **2026 Silver ADDY for the resulting campaign** — never “I won” / “my design won.”  
 - Design Technology collaboration, unnamed.  
 - Vimeo and official CS page = post-handoff production.

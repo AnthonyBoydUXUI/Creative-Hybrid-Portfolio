@@ -55,7 +55,7 @@ export function KarateKidBody() {
         </a>
       </p>
       <p className="kk-link-note">
-        Both links open IMDb Creative Studio’s completed 2025 campaign — after production handoff.
+        Both links open IMDb Creative Studio’s completed 2025 campaign — the finished production after the work moved to other designers on the team.
       </p>
 
       <section>
@@ -261,7 +261,7 @@ export function KarateKidBody() {
       <section>
         <h2>From initial build to final production</h2>
         <p className="prose">{kk.handoff}</p>
-        <Flow items={["Original experience design", "Production handoff", "Final IMDb Creative Studio campaign"]} />
+        <Flow items={["Original experience design", "Handoff to designers + Design Technology", "Final IMDb Creative Studio campaign"]} />
         <Frame
           src={kk.images.keyArt.src}
           alt={kk.images.keyArt.alt}
@@ -282,7 +282,7 @@ export function KarateKidBody() {
             <a href={kk.finishedVideo} target="_blank" rel="noreferrer">
               Watch the final production on Vimeo
             </a>
-            . I did not produce this finished edit; it documents the campaign after handoff.
+            . I did not produce this finished edit; it documents the campaign as completed by the Creative Studio team after the internal handoff.
           </p>
         </div>
       </section>
@@ -302,8 +302,8 @@ export function KarateKidBody() {
           </li>
           <li>
             <p className="eyebrow">2025</p>
-            <h3>Handoff</h3>
-            <p>Continued IMDb Creative Studio production</p>
+            <h3>Team handoff</h3>
+            <p>Other designers and Design Technology continued production</p>
           </li>
           <li>
             <p className="eyebrow">2025</p>
@@ -355,7 +355,7 @@ export function KarateKidBody() {
           ))}
         </ul>
         <p className="prose" style={{ color: "var(--muted)" }}>
-          Campaign outcomes above are taken from the public IMDb Creative Studio case. They describe the finished production after handoff, not a personal award or personal launch metric.
+          Campaign outcomes above are taken from the public IMDb Creative Studio case. They describe the finished production after the internal team handoff, not a personal award or personal launch metric.
         </p>
       </section>
 
