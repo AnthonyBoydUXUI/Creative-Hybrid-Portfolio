@@ -14,7 +14,7 @@ export default function WorkPage() {
         <p className="eyebrow">Work</p>
         <h1 className="display">Projects that had to work in the world.</h1>
         <p className="lede" style={{ margin: "1rem 0 2rem" }}>
-          Interactive video products, a vehicle onboarding system, and a modular studio toolkit — designed with empathy, constraint, and follow-through.
+          Interactive video products, a Karate Kid training-game experience, a vehicle onboarding system, and a modular studio toolkit — designed with empathy, constraint, and follow-through.
         </p>
         <div className="project-grid">
           {projects.map((project) => (

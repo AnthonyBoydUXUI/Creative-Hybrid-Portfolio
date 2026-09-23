@@ -3,8 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AudioPlayer } from "@/components/AudioPlayer";
+import { KarateKidBody } from "@/components/KarateKidBody";
 import {
   getProject,
+  karateKidCase,
   lionessCase,
   mariaCase,
   modularCase,
@@ -44,30 +46,46 @@ export default async function ProjectPage({ params }: Props) {
             <span>{project.title}</span>
           </p>
           <p className="eyebrow" style={{ marginTop: "1.5rem" }}>
-            {project.year} · {project.client}
+            {slug === "karate-kid-legends" ? karateKidCase.eyebrow : `${project.year} · ${project.client}`}
           </p>
-          <h1 className="display">{project.title}</h1>
+          <h1 className="display">{slug === "karate-kid-legends" ? karateKidCase.displayTitle : project.title}</h1>
           <p className="lede">{project.summary}</p>
           <dl
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(10rem, 1fr))",
-              gap: "1rem",
-              margin: "2rem 0 0",
-            }}
+            className={slug === "karate-kid-legends" ? "kk-meta" : undefined}
+            style={
+              slug === "karate-kid-legends"
+                ? undefined
+                : {
+                    display: "grid",
+                    gridTemplateColumns: "repeat(auto-fit, minmax(10rem, 1fr))",
+                    gap: "1rem",
+                    margin: "2rem 0 0",
+                  }
+            }
           >
-            <div>
-              <dt className="eyebrow">Role</dt>
-              <dd style={{ margin: "0.35rem 0 0" }}>{project.role}</dd>
-            </div>
-            <div>
-              <dt className="eyebrow">Client</dt>
-              <dd style={{ margin: "0.35rem 0 0" }}>{project.client}</dd>
-            </div>
-            <div>
-              <dt className="eyebrow">Year</dt>
-              <dd style={{ margin: "0.35rem 0 0" }}>{project.year}</dd>
-            </div>
+            {slug === "karate-kid-legends"
+              ? karateKidCase.heroMeta.map((item) => (
+                  <div key={item.label}>
+                    <dt className="eyebrow">{item.label}</dt>
+                    <dd style={{ margin: "0.35rem 0 0" }}>{item.value}</dd>
+                  </div>
+                ))
+              : (
+                  <>
+                    <div>
+                      <dt className="eyebrow">Role</dt>
+                      <dd style={{ margin: "0.35rem 0 0" }}>{project.role}</dd>
+                    </div>
+                    <div>
+                      <dt className="eyebrow">Client</dt>
+                      <dd style={{ margin: "0.35rem 0 0" }}>{project.client}</dd>
+                    </div>
+                    <div>
+                      <dt className="eyebrow">Year</dt>
+                      <dd style={{ margin: "0.35rem 0 0" }}>{project.year}</dd>
+                    </div>
+                  </>
+                )}
           </dl>
         </div>
       </header>
@@ -92,6 +110,7 @@ export default async function ProjectPage({ params }: Props) {
       </div>
 
       <div className="wrap" style={{ padding: "3rem 0 4rem" }}>
+        {slug === "karate-kid-legends" ? <KarateKidBody /> : null}
         {slug === "vehicle-onboarding" ? <VoaBody /> : null}
         {slug === "lioness" ? <LionessBody /> : null}
         {slug === "modular" ? <ModularBody /> : null}

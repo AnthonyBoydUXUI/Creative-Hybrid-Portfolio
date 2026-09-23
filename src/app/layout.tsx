@@ -35,6 +35,8 @@ export const metadata: Metadata = {
     "service designer",
     "UX",
     "IMDb",
+    "Karate Kid",
+    "interaction design",
     "Los Angeles",
     "OurnAI",
   ],
