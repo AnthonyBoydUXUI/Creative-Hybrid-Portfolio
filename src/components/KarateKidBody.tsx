@@ -186,17 +186,17 @@ export function KarateKidBody() {
             sizes="(max-width: 800px) 100vw, 68rem"
             style={{ width: "100%", height: "auto" }}
           />
-          <figcaption>Historical hand-pose strip prepared for interaction and animation states.</figcaption>
+          <figcaption>Hand-pose strip I created for interaction and animation states.</figcaption>
         </figure>
         <div className="kk-objects">
-          <Frame src={kk.images.studioDummy.src} alt={kk.images.studioDummy.alt} caption="3D source object · dummy" />
-          <Frame src={kk.images.studioBall.src} alt={kk.images.studioBall.alt} caption="3D source object · ball" />
-          <Frame src={kk.images.studioStick.src} alt={kk.images.studioStick.alt} caption="3D source object · staff" />
+          <Frame src={kk.images.studioDummy.src} alt={kk.images.studioDummy.alt} caption="Wooden dummy I created" />
+          <Frame src={kk.images.studioBall.src} alt={kk.images.studioBall.alt} caption="Balance ball I created" />
+          <Frame src={kk.images.studioStick.src} alt={kk.images.studioStick.alt} caption="Staff I created" />
         </div>
         <Frame
           src={kk.images.sourceHands.src}
           alt={kk.images.sourceHands.alt}
-          caption="Original wireframe hands prepared as interaction-state source art."
+          caption="Wireframe hands I created for interaction states."
         />
       </section>
 
