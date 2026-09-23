@@ -63,7 +63,7 @@ Display title on the case study: **Karate Kid: Legends × IMDb**. Subtitle: **In
 
 - https://imdbcreativestudio.com/home/karate-kid  
   Precision / Memory / Balance; web + mobile; 6 languages; 10 countries (UK, Spain, Mexico, Brazil, Germany, France, Netherlands, Switzerland, Austria, Ireland); Silver ADDY 2026 Los Angeles American Advertising Awards; category Web Banner Ad or Website Takeover; Video Wall+ / Mobile Video Wall+.
-- https://vimeo.com/1147528182 — final campaign video. Embed in Final Production. Do not claim personal authorship of the finished video.
+- https://vimeo.com/1142251482?fl=pl&fe=vl — final campaign video. Embed in Final Production. Do not claim personal authorship of the finished video.
 
 ## Asset inventory
 
