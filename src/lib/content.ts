@@ -560,8 +560,10 @@ export const karateKidCase = {
     "Next challenge",
     "Final completion",
   ],
-  assetsLead:
-    "The interactive unit needed production art that could change state — not only finished marketing frames. I prepared source objects and sprite frames for implementation, including studio-supplied 3D assets and original hand-pose art, then worked with Design Technology on what the build required.",
+  assetsLead: [
+    "Sony Pictures / Columbia Pictures needed an interactive campaign experience that could support motion, feedback, and multiple gameplay states. I created and prepared source objects and sprite frames for implementation — including 3D assets and original hand-pose artwork — and worked closely with Design Technology to translate the design into build-ready requirements.",
+    "I also created the game mechanics and background imagery.",
+  ],
   collaboration:
     "The experience required close collaboration between design and Design Technology. I worked through the mechanics, states, visual behaviors, and supporting assets while partnering with Design Technology to translate the concept into an interactive experience that could live within IMDb’s advertising environment.",
   responsive:
@@ -610,6 +612,7 @@ export const karateKidCase = {
     "Mobile UX",
     "Responsive interaction design",
     "Visual design",
+    "Background imagery",
     "Production asset creation",
     "Asset preparation",
     "Sprite / animation asset preparation",
@@ -715,15 +718,15 @@ export const karateKidCase = {
     },
     studioDummy: {
       src: "/media/karate-kid/studio-dummy.jpg",
-      alt: "Studio-provided wooden dummy used as source art for the Precision challenge.",
+      alt: "Wooden dummy source object created and prepared for the Precision challenge.",
     },
     studioBall: {
       src: "/media/karate-kid/studio-ball.jpg",
-      alt: "Studio-provided leather ball used as source art for the Balance challenge.",
+      alt: "Leather ball source object created and prepared for the Balance challenge.",
     },
     studioStick: {
       src: "/media/karate-kid/studio-stick.jpg",
-      alt: "Studio-provided wooden staff used as source art for the Balance challenge.",
+      alt: "Wooden staff source object created and prepared for the Balance challenge.",
     },
     keyArt: {
       src: "/media/karate-kid/film-key-art.jpg",
