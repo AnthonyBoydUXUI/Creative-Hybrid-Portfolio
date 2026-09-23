@@ -55,7 +55,7 @@ export function KarateKidBody() {
         </a>
       </p>
       <p className="kk-link-note">
-        Both links open IMDb Creative Studio’s completed 2025 campaign — after production handoff.
+        Both links open IMDb Creative Studio’s completed 2025 campaign — the finished production as work continued across Design + Design Technology.
       </p>
 
       <section>
@@ -259,9 +259,17 @@ export function KarateKidBody() {
       </section>
 
       <section>
-        <h2>From initial build to final production</h2>
-        <p className="prose">{kk.handoff}</p>
-        <Flow items={["Original experience design", "Production handoff", "Final IMDb Creative Studio campaign"]} />
+        <h2>From initial build to production</h2>
+        <p className="prose">{kk.production}</p>
+        <Flow
+          items={[
+            "April 2025 — Initial Experience",
+            "April 2025 — Design × Design Technology",
+            "2025 — Continued Production",
+            "2025 — Campaign Launch",
+            "2026 — Silver ADDY Recognition",
+          ]}
+        />
         <Frame
           src={kk.images.keyArt.src}
           alt={kk.images.keyArt.alt}
@@ -282,7 +290,7 @@ export function KarateKidBody() {
             <a href={kk.finishedVideo} target="_blank" rel="noreferrer">
               Watch the final production on Vimeo
             </a>
-            . I did not produce this finished edit; it documents the campaign after handoff.
+            . I did not produce this finished edit; it documents the campaign as production continued across IMDb Creative Studio Design + Design Technology.
           </p>
         </div>
       </section>
@@ -291,29 +299,29 @@ export function KarateKidBody() {
         <h2>Project timeline</h2>
         <ol className="kk-timeline">
           <li>
-            <p className="eyebrow">Apr 2025</p>
-            <h3>Initial experience</h3>
+            <p className="eyebrow">April 2025</p>
+            <h3>Initial Experience</h3>
             <p>Concept + UX + game mechanics</p>
           </li>
           <li>
-            <p className="eyebrow">Apr 2025</p>
+            <p className="eyebrow">April 2025</p>
             <h3>Design × Design Technology</h3>
             <p>Interaction build + asset production</p>
           </li>
           <li>
             <p className="eyebrow">2025</p>
-            <h3>Handoff</h3>
-            <p>Continued IMDb Creative Studio production</p>
+            <h3>Continued Production</h3>
+            <p>IMDb Creative Studio Design + Design Technology</p>
           </li>
           <li>
             <p className="eyebrow">2025</p>
-            <h3>Launch</h3>
+            <h3>Campaign Launch</h3>
             <p>Final international campaign</p>
           </li>
           <li>
             <p className="eyebrow">2026</p>
-            <h3>Recognition</h3>
-            <p>Silver ADDY for the resulting campaign</p>
+            <h3>Silver ADDY Recognition</h3>
+            <p>Resulting campaign</p>
           </li>
         </ol>
         <p className="prose">{kk.timelineNote}</p>
@@ -355,7 +363,7 @@ export function KarateKidBody() {
           ))}
         </ul>
         <p className="prose" style={{ color: "var(--muted)" }}>
-          Campaign outcomes above are taken from the public IMDb Creative Studio case. They describe the finished production after handoff, not a personal award or personal launch metric.
+          Campaign outcomes above are taken from the public IMDb Creative Studio case. They describe the finished production as work continued across Design + Design Technology — not a personal award or personal launch metric.
         </p>
       </section>
 
@@ -393,8 +401,8 @@ export function KarateKidBody() {
             <dd>April 2025</dd>
           </div>
           <div>
-            <dt>Final production</dt>
-            <dd>IMDb Creative Studio · 2025</dd>
+            <dt>Continued production</dt>
+            <dd>IMDb Creative Studio Design + Design Technology · 2025</dd>
           </div>
           <div>
             <dt>Final campaign recognition</dt>
