@@ -548,7 +548,7 @@ export const karateKidCase = {
       "Incorrect response (red miss)",
       "Completion, reward, or replay",
     ],
-    note: "Memory asked the player to remember a keyboard combination — shown once, then repeated. The frames below are from the April 2025 desktop build.",
+    note: "Frames from the April 2025 desktop build.",
   },
   states: [
     "Select game",
@@ -565,37 +565,23 @@ export const karateKidCase = {
     "I also created and prepared implementation-ready source objects, sprite frames, 3D assets, and original hand-pose artwork, then collaborated closely with Design Technology to translate the experience into practical build requirements.",
     "Several of the environmental concepts and background treatments developed during this phase were carried forward and refined in the final production, helping preserve continuity between the original interaction design and the launched experience.",
   ],
-  collaboration:
-    "The experience required close collaboration between design and Design Technology. I worked through the mechanics, states, visual behaviors, and supporting assets while partnering with Design Technology to translate the concept into an interactive experience that could live within IMDb’s advertising environment.",
   responsive:
     "Desktop used keyboard and a wider Video Wall+ canvas. Mobile kept the same Precision → Balance → Memory path with touch targets at the thumb edge, a tighter hierarchy, and the IMDb rail still in view — adapting the interaction model rather than shrinking the desktop layout.",
   production:
-    "I developed the initial experience, game mechanics, interaction system, and supporting assets as part of IMDb Creative Studio, working closely with Design Technology. As the campaign progressed into production, the work continued collaboratively across the IMDb Creative Studio design and Design Technology teams.",
-  timelineNote:
-    "The work moved from the April 2025 initial experience and Design × Design Technology collaboration into continued production across IMDb Creative Studio Design + Design Technology, then to campaign launch in 2025. In 2026, the resulting campaign received Silver ADDY recognition.",
-  outcome:
-    "I developed the initial experience, game mechanics, interaction system, and supporting assets as part of IMDb Creative Studio, working closely with Design Technology. As the campaign progressed into production, the work continued collaboratively across the IMDb Creative Studio design and Design Technology teams. The finished campaign retained the core Precision, Balance, and Memory training structure from that initial work. In 2026, the resulting campaign received Silver ADDY recognition at the Los Angeles American Advertising Awards.",
+    "IMDb Creative Studio’s public case and the video below document the launched campaign. I did not produce this finished edit.",
   impactIntro:
-    "The figures below describe the finished campaign as production continued across IMDb Creative Studio Design + Design Technology — published by IMDb Creative Studio, not as personal performance metrics.",
+    "Figures published by IMDb Creative Studio for the launched campaign — not personal performance metrics.",
   impactStats: [
     { stat: "6", label: "Languages, launched simultaneously" },
     { stat: "10", label: "Countries across Europe and LATAM" },
     { stat: "3", label: "Training games in one system" },
   ],
-  impactCountries:
-    "UK, Spain, Mexico, Brazil, Germany, France, Netherlands, Switzerland, Austria, and Ireland",
   impactQuote: [
     "Launched our fully localized gamified experience simultaneously in 6 languages across 10 countries in the EU and LATAM (UK, Spain, Mexico, Brazil, Germany, France, Netherlands, Switzerland, Austria, and Ireland).",
     "Pairing addictive mini-games with rich character galleries and exclusive video content, it created a seamless bridge between interactive training and blockbuster hype, bringing discipline, focus, and a whole lot of “wax on, wax off” to fans worldwide.",
   ],
   impactSourceLabel: "IMDb Creative Studio — Karate Kid: Legends",
-  publicFacts: [
-    "Web and mobile Video Wall+ campaign",
-    "Precision, Memory, and Balance training games",
-    "Localized in 6 languages across 10 countries in the EU and LATAM",
-    "Silver ADDY, 2026 Los Angeles American Advertising Awards",
-    "Category: Web Banner Ad / Website Takeover",
-  ],
+  impactCategory: "Category: Web Banner Ad / Website Takeover · Los Angeles American Advertising Awards",
   contributions: [
     "Initial experience design",
     "Initial build / design development",
@@ -622,8 +608,6 @@ export const karateKidCase = {
     "Early production development",
     "Continued production with Creative Studio Design + Design Technology",
   ],
-  transparency:
-    "This case study focuses on the initial experience, game mechanics, interaction system, and supporting assets I developed at IMDb Creative Studio in April 2025, working closely with Design Technology. As the campaign progressed into production, the work continued collaboratively across the IMDb Creative Studio design and Design Technology teams.",
   images: {
     desktopExpanded: {
       src: "/media/karate-kid/desktop-expanded.jpg",
