@@ -81,18 +81,28 @@ Display title on the case study: **Karate Kid: Legends × IMDb**. Subtitle: **In
 | `43db9a1e…` Balance win | 1 original work | Yes | Success state |
 | `8e2d1303…` Balance lose | 1 original work | Yes | Failure / retry |
 | `035efd1b…` Wireframe hands | 1 original work · 7 motion-capable | Yes | Asset pipeline source art |
+| `033ab8d9…` Memory intro | 1 original work | Yes | Memory |
+| `4e0481ee…` Memory remember letters | 1 original work | Yes | Memory mechanic |
+| `9bd9acc0…` Memory correct | 1 original work | Yes | Green confirmation |
+| `b7b9e42a…` Memory incorrect | 1 original work | Yes | Red miss |
+| `7064fb8a…` Memory win | 1 original work | Yes | Success / belt |
+| `1bf2d8b3…` Memory lose | 1 original work | Yes | Failure / retry |
+| `3bbb3b9d…` / `35418339…` completion | 1 original work | Yes | All-three-games reward |
+| `a20df1e3…` / `6e186d09…` mobile | 1 original work | Yes | Mobile Video Wall+ |
+| `23db9613…` Hand sprite strip | 2 / 7 studio + implementation | Yes | Historical sprite sheet |
+| `67f60a53…` / `03baab5f…` / `90dde401…` dummy, ball, staff | 3 studio-provided source | Yes | Labeled as studio-provided |
 | `d1dd45ce…` Official key art | 3 final-production reference | Yes, sparingly | Film context in Final Production only — **not** the tile |
-| `88571be8…` / `f6d65ea2…` / `9f217873…` / `2816c946…` title cards | 1 original, low information | Omit | Black slides; no design signal |
+| `88571be8…` / `f6d65ea2…` / `9f217873…` / `2816c946…` / `bace8995…` / `5a541bbb…` title cards | 1 original, low information | Omit | Black slides; no design signal |
+| `b9981765…` / `e6cced19…` empty PNGs | 6 needs review | Omit | Blank files |
+| `ad2bc6ac…` Desktop expanded (second) | 2 near-duplicate | Omit | Same composition as first expanded frame |
 | `9daffaf6…` Columbia brief | 4 confidential / internal only | **No** | Internal context only. Not copied. Not quoted. |
 
-### Not supplied (do not fabricate)
+### Still not claimed / not fabricated
 
-- Memory gameplay frames  
-- Mobile / tablet mockups  
-- Historical sprite sheets or animation frame sequences  
 - Named collaborators  
 - Campaign metrics beyond the public CS page  
 - Authorship of the finished Vimeo edit  
+- Personal authorship of studio-supplied 3D objects
 
 ## Interactive demonstrations
 
@@ -100,7 +110,7 @@ Portfolio-only teaching tools, labeled as such. Keyboard + touch. `aria-live` fe
 
 - Precision: left/right block of a highlighted target  
 - Balance: hold input to keep a marker in a zone  
-- Memory: observe → repeat a short sequence  
+- Memory: remember a Shift / Alt-style key combination, then repeat it  
 
 ## Components
 
@@ -137,7 +147,6 @@ Karate Kid, IMDb, Sony Pictures, and Columbia Pictures marks belong to their own
 
 ## Open questions
 
-1. Memory and mobile visuals — still needed if a later pass should show those states.  
-2. Whether a historical sprite sheet exists beyond the two-pose hands file.  
-3. Whether any collaborator names are later approved for credits.  
-4. Whether the finished Vimeo should stay embed-only or also have a hosted poster frame.
+1. Whether any collaborator names are later approved for credits.  
+2. Whether the finished Vimeo should stay embed-only or also have a hosted poster frame.  
+3. Whether additional sprite-frame sequences exist beyond the hand strip.

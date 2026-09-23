@@ -83,6 +83,18 @@ export function KarateKidBody() {
           alt={kk.images.gameSelect.alt}
           caption="Original April 2025 game select. Later challenges stay inactive until earlier drills are complete."
         />
+        <div className="kk-pair">
+          <Frame
+            src={kk.images.celebrationKick.src}
+            alt={kk.images.celebrationKick.alt}
+            caption="Completion · kick"
+          />
+          <Frame
+            src={kk.images.celebrationBelt.src}
+            alt={kk.images.celebrationBelt.alt}
+            caption="Completion · earned belt"
+          />
+        </div>
       </section>
 
       <section>
@@ -135,6 +147,14 @@ export function KarateKidBody() {
             ))}
           </ul>
           <p className="prose">{kk.memory.note}</p>
+          <div className="kk-pair">
+            <Frame src={kk.images.memoryIntro.src} alt={kk.images.memoryIntro.alt} caption="Intro" />
+            <Frame src={kk.images.memoryRemember.src} alt={kk.images.memoryRemember.alt} caption="Remember once" />
+            <Frame src={kk.images.memoryCorrect.src} alt={kk.images.memoryCorrect.alt} caption="Correct" />
+            <Frame src={kk.images.memoryIncorrect.src} alt={kk.images.memoryIncorrect.alt} caption="Incorrect" />
+            <Frame src={kk.images.memoryWin.src} alt={kk.images.memoryWin.alt} caption="Success" />
+            <Frame src={kk.images.memoryLose.src} alt={kk.images.memoryLose.alt} caption="Failure / retry" />
+          </div>
           <MemoryDemo />
         </article>
       </section>
@@ -153,10 +173,26 @@ export function KarateKidBody() {
         <Flow
           items={["Source art", "Asset separation", "Frame / sprite preparation", "Interaction states", "Implementation"]}
         />
+        <figure className="kk-frame kk-sprite">
+          <Image
+            src={kk.images.handSprite.src}
+            alt={kk.images.handSprite.alt}
+            width={2000}
+            height={215}
+            sizes="(max-width: 800px) 100vw, 68rem"
+            style={{ width: "100%", height: "auto" }}
+          />
+          <figcaption>Historical hand-pose strip prepared for interaction and animation states.</figcaption>
+        </figure>
+        <div className="kk-objects">
+          <Frame src={kk.images.studioDummy.src} alt={kk.images.studioDummy.alt} caption="Studio-provided dummy" />
+          <Frame src={kk.images.studioBall.src} alt={kk.images.studioBall.alt} caption="Studio-provided ball" />
+          <Frame src={kk.images.studioStick.src} alt={kk.images.studioStick.alt} caption="Studio-provided staff" />
+        </div>
         <Frame
           src={kk.images.sourceHands.src}
           alt={kk.images.sourceHands.alt}
-          caption="Original source art prepared for interaction states. A historical multi-frame sprite sheet was not in the supplied files."
+          caption="Original wireframe hands prepared as interaction-state source art."
         />
       </section>
 
@@ -190,6 +226,18 @@ export function KarateKidBody() {
             caption="Desktop · collapsed unit"
           />
         </div>
+        <div className="kk-pair">
+          <Frame
+            src={kk.images.mobileSelectPrecision.src}
+            alt={kk.images.mobileSelectPrecision.alt}
+            caption="Mobile · select and Precision"
+          />
+          <Frame
+            src={kk.images.mobileBalanceMemory.src}
+            alt={kk.images.mobileBalanceMemory.alt}
+            caption="Mobile · Balance, Memory, completion"
+          />
+        </div>
         <div className="kk-split">
           <div>
             <h3>Desktop</h3>
@@ -202,9 +250,9 @@ export function KarateKidBody() {
           <div>
             <h3>Mobile</h3>
             <ul>
-              <li>Touch interaction</li>
-              <li>Thumb-accessible controls</li>
-              <li>Responsive hierarchy and touch feedback</li>
+              <li>Touch interaction at the thumb edge</li>
+              <li>Same three-game path in a tighter canvas</li>
+              <li>IMDb rail remains in view beneath the unit</li>
             </ul>
           </div>
         </div>

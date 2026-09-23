@@ -332,98 +332,108 @@ export function BalanceDemo() {
   );
 }
 
-const MEMORY_PADS = [
-  { id: "north", label: "High" },
-  { id: "east", label: "Right" },
-  { id: "south", label: "Low" },
-  { id: "west", label: "Left" },
+const MEMORY_KEYS = [
+  { id: "Shift", code: "ShiftLeft" },
+  { id: "Alt", code: "AltLeft" },
+  { id: "Ctrl", code: "ControlLeft" },
 ] as const;
+
+const MEMORY_COMBOS: (typeof MEMORY_KEYS)[number]["id"][][] = [
+  ["Shift", "Alt"],
+  ["Alt", "Ctrl"],
+  ["Shift", "Ctrl"],
+];
 
 export function MemoryDemo() {
   const reduced = usePrefersReducedMotion();
   const labelId = useId();
   const [status, setStatus] = useState<DemoStatus>("idle");
-  const [sequence, setSequence] = useState<number[]>([]);
+  const [combo, setCombo] = useState<(typeof MEMORY_KEYS)[number]["id"][]>(["Shift", "Alt"]);
   const [step, setStep] = useState(0);
-  const [lit, setLit] = useState<number | null>(null);
   const [phase, setPhase] = useState<"watch" | "repeat">("watch");
-  const [live, setLive] = useState("Memory demo idle. Watch the sequence, then repeat it.");
-  const lock = useRef(false);
+  const [feedback, setFeedback] = useState<"none" | "good" | "bad">("none");
+  const [live, setLive] = useState("Memory demo idle. A key combination is shown once, then you repeat it.");
 
-  const playSequence = async (next: number[]) => {
-    lock.current = true;
-    setPhase("watch");
-    setLive(`Watch ${next.length} moves.`);
-    const wait = (ms: number) => new Promise((resolve) => window.setTimeout(resolve, ms));
-    for (const index of next) {
-      setLit(index);
-      await wait(reduced ? 700 : 420);
-      setLit(null);
-      await wait(reduced ? 280 : 160);
-    }
-    setPhase("repeat");
+  const start = () => {
+    const next = MEMORY_COMBOS[Math.floor(Math.random() * MEMORY_COMBOS.length)];
+    setCombo(next);
     setStep(0);
-    lock.current = false;
-    setLive("Your turn. Repeat the sequence.");
-  };
-
-  const start = async () => {
-    const first = [Math.floor(Math.random() * 4), Math.floor(Math.random() * 4)];
-    setSequence(first);
+    setFeedback("none");
     setStatus("playing");
-    await playSequence(first);
+    setPhase("watch");
+    setLive(`Remember ${next.join(" then ")}.`);
+    window.setTimeout(
+      () => {
+        setPhase("repeat");
+        setLive("Your turn. Repeat the combination in order.");
+      },
+      reduced ? 1600 : 2200,
+    );
   };
 
-  const press = async (index: number) => {
-    if (status !== "playing" || phase !== "repeat" || lock.current) return;
-    setLit(index);
-    window.setTimeout(() => setLit((current) => (current === index ? null : current)), 180);
-    if (sequence[step] !== index) {
+  const press = (id: (typeof MEMORY_KEYS)[number]["id"]) => {
+    if (status !== "playing" || phase !== "repeat") return;
+    if (combo[step] !== id) {
+      setFeedback("bad");
       setStatus("fail");
-      setLive("Incorrect move. Reset and try again.");
+      setLive("Incorrect key. Reset and try again.");
       return;
     }
     const nextStep = step + 1;
-    if (nextStep < sequence.length) {
+    if (nextStep < combo.length) {
       setStep(nextStep);
-      setLive(`Correct. ${nextStep} of ${sequence.length}.`);
+      setLive(`Correct. ${nextStep} of ${combo.length}.`);
       return;
     }
-    if (sequence.length >= 4) {
-      setStatus("success");
-      setLive("Sequence complete. Memory drill finished.");
-      return;
-    }
-    const next = [...sequence, Math.floor(Math.random() * 4)];
-    setSequence(next);
-    await playSequence(next);
+    setFeedback("good");
+    setStatus("success");
+    setLive("Combination complete. Memory drill finished.");
   };
+
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      const match = MEMORY_KEYS.find((key) => event.code === key.code || event.key === key.id);
+      if (!match) return;
+      event.preventDefault();
+      press(match.id);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
 
   return (
     <DemoShell title="Memory" principle="Observe → remember → repeat" status={status} live={live}>
       <p id={labelId} className="kk-demo-help" style={{ marginTop: 0 }}>
-        {phase === "watch" && status === "playing" ? "Watch the sequence." : "Repeat the sequence in order."}
+        {status === "idle" && "A short key combination will appear once."}
+        {status === "playing" && phase === "watch" && "Remember these keys."}
+        {status === "playing" && phase === "repeat" && "Your turn."}
+        {status === "success" && "Sequence held."}
+        {status === "fail" && "Missed combination."}
       </p>
-      <div className="kk-pads" role="group" aria-labelledby={labelId}>
-        {MEMORY_PADS.map((pad, index) => (
+      <p className="kk-combo" data-feedback={feedback} aria-live="polite">
+        {status === "idle" ? "—" : phase === "watch" || status !== "playing" ? combo.join("  →  ") : "•  •"}
+      </p>
+      <div className="kk-keys" role="group" aria-labelledby={labelId}>
+        {MEMORY_KEYS.map((key) => (
           <button
-            key={pad.id}
+            key={key.id}
             type="button"
             className="kk-pad"
-            data-lit={lit === index ? "true" : "false"}
             disabled={status !== "playing" || phase !== "repeat"}
-            onClick={() => press(index)}
+            onClick={() => press(key.id)}
           >
-            {pad.label}
+            {key.id}
           </button>
         ))}
       </div>
       <div className="kk-demo-controls">
-        <button type="button" className="btn btn-primary" onClick={start} disabled={status === "playing"}>
-          {status === "playing" ? "Sequence running" : "Start memory"}
+        <button type="button" className="btn btn-primary" onClick={start} disabled={status === "playing" && phase === "watch"}>
+          {status === "playing" && phase === "watch" ? "Memorize" : "Start memory"}
         </button>
       </div>
-      <p className="kk-demo-help">Portfolio demonstration of the observe-then-repeat loop. Not a capture of a 2025 Memory screenshot.</p>
+      <p className="kk-demo-help">
+        Portfolio demonstration of the Shift / Alt style combination from the April 2025 Memory build. Use the keys or the buttons.
+      </p>
     </DemoShell>
   );
 }

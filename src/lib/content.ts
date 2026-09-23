@@ -542,13 +542,13 @@ export const karateKidCase = {
   memory: {
     principle: "Observe → remember → repeat",
     points: [
-      "Sequence display",
-      "Player’s turn",
-      "Correct and incorrect response",
-      "Progression through the pattern",
-      "Completion of the drill",
+      "Letter / key combination shown once",
+      "Player’s turn to repeat the combo",
+      "Correct response (green confirmation)",
+      "Incorrect response (red miss)",
+      "Completion, reward, or replay",
     ],
-    note: "Memory gameplay frames from the April 2025 build were not retained in the supplied files. The mechanic below is reconstructed from the original three-game system and the public final-production description — not from a surviving Memory screenshot.",
+    note: "Memory asked the player to remember a keyboard combination — shown once, then repeated. The frames below are from the April 2025 desktop build.",
   },
   states: [
     "Select game",
@@ -561,11 +561,11 @@ export const karateKidCase = {
     "Final completion",
   ],
   assetsLead:
-    "The interactive unit needed production art that could change state — not only finished marketing frames. I created and prepared supporting assets, then worked with Design Technology on what implementation required.",
+    "The interactive unit needed production art that could change state — not only finished marketing frames. I prepared source objects and sprite frames for implementation, including studio-supplied 3D assets and original hand-pose art, then worked with Design Technology on what the build required.",
   collaboration:
     "The experience required close collaboration between design and Design Technology. I worked through the mechanics, states, visual behaviors, and supporting assets while partnering with Design Technology to translate the concept into an interactive experience that could live within IMDb’s advertising environment.",
   responsive:
-    "Desktop used keyboard and a wider Video Wall+ canvas. Mobile had to keep the same training logic with touch, thumb-reachable controls, and a tighter hierarchy — adapting the interaction model rather than shrinking the desktop layout. Original mobile frames were not in the supplied set; the public campaign later shipped Mobile Video Wall+ alongside web.",
+    "Desktop used keyboard and a wider Video Wall+ canvas. Mobile kept the same Precision → Balance → Memory path with touch targets at the thumb edge, a tighter hierarchy, and the IMDb rail still in view — adapting the interaction model rather than shrinking the desktop layout.",
   handoff:
     "The experience continued to evolve after my handoff. The finished campaign retained the central Precision, Balance, and Memory training framework while the continuing IMDb Creative Studio team refined and completed the final execution.",
   timelineNote:
@@ -655,6 +655,62 @@ export const karateKidCase = {
     sourceHands: {
       src: "/media/karate-kid/source-hands.png",
       alt: "Original production source art: two wireframe hands in open and two-finger poses, prepared for interaction states.",
+    },
+    handSprite: {
+      src: "/media/karate-kid/hand-sprite.png",
+      alt: "Hand-pose sprite strip: a sequence of open, pointing, and angled hands prepared for interaction and animation states.",
+    },
+    memoryIntro: {
+      src: "/media/karate-kid/memory-intro.jpg",
+      alt: "Memory intro: Mr. Miyagi with Memory selected and the line two branches, one tree.",
+    },
+    memoryRemember: {
+      src: "/media/karate-kid/memory-remember.jpg",
+      alt: "Memory instruction state: remember these letters, with Shift and Alt shown once.",
+    },
+    memoryCorrect: {
+      src: "/media/karate-kid/memory-correct.jpg",
+      alt: "Memory correct response: kick silhouette with a green confirmation ring.",
+    },
+    memoryIncorrect: {
+      src: "/media/karate-kid/memory-incorrect.jpg",
+      alt: "Memory incorrect response: kick silhouette with a red miss ring and the miss count incremented.",
+    },
+    memoryWin: {
+      src: "/media/karate-kid/memory-win.jpg",
+      alt: "Memory success state: headband reward with the line remember what you are fighting for.",
+    },
+    memoryLose: {
+      src: "/media/karate-kid/memory-lose.jpg",
+      alt: "Memory failure state: replay control with Mr. Han and Mr. Miyagi beside Li Fong.",
+    },
+    celebrationKick: {
+      src: "/media/karate-kid/celebration-kick.jpg",
+      alt: "All-three-games complete: celebration transition with a kick silhouette across the Karate Kid: Legends title.",
+    },
+    celebrationBelt: {
+      src: "/media/karate-kid/celebration-belt.jpg",
+      alt: "All-three-games complete: celebration with the earned headband over the title.",
+    },
+    mobileSelectPrecision: {
+      src: "/media/karate-kid/mobile-select-precision.jpg",
+      alt: "Mobile Video Wall+: inline sponsored unit, game select, and Precision with thumb-side controls.",
+    },
+    mobileBalanceMemory: {
+      src: "/media/karate-kid/mobile-balance-memory.jpg",
+      alt: "Mobile Video Wall+: Balance, Memory, and the all-three-complete reward on stacked phone frames.",
+    },
+    studioDummy: {
+      src: "/media/karate-kid/studio-dummy.jpg",
+      alt: "Studio-provided wooden dummy used as source art for the Precision challenge.",
+    },
+    studioBall: {
+      src: "/media/karate-kid/studio-ball.jpg",
+      alt: "Studio-provided leather ball used as source art for the Balance challenge.",
+    },
+    studioStick: {
+      src: "/media/karate-kid/studio-stick.jpg",
+      alt: "Studio-provided wooden staff used as source art for the Balance challenge.",
     },
     keyArt: {
       src: "/media/karate-kid/film-key-art.jpg",
