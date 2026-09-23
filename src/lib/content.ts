@@ -16,6 +16,23 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "karate-kid-legends",
+    title: "Karate Kid: Legends",
+    subtitle: "Interactive Experience · IMDb Creative Studio × Sony Pictures",
+    year: "April 2025",
+    role: "Product / UX / Visual Design",
+    client: "IMDb Creative Studio · Sony Pictures / Columbia Pictures",
+    summary:
+      "I worked on the initial design and build of the Karate Kid: Legends interactive experience at IMDb Creative Studio, developing the game mechanics, interaction system and supporting production assets alongside Design Technology before handing the project off for continued production.",
+    thumbnail: "/media/karate-kid/game-select.jpg",
+    thumbnailAlt:
+      "Original April 2025 desktop concept: IMDb Video Wall+ with the Karate Kid: Legends training game select — Precision, Balance, and Memory.",
+    hero: "/media/karate-kid/game-select.jpg",
+    heroAlt:
+      "Laptop frame of the original Karate Kid: Legends game-select state on IMDb, with three training challenges over a temple garden.",
+    featured: true,
+  },
+  {
     slug: "vehicle-onboarding",
     title: "Vehicle Onboarding App",
     subtitle: "Voice, safety, and personalization for new EV owners",
@@ -475,6 +492,175 @@ export const mariaCase = {
       alt: "Wide promotional frame from the Maria campaign system.",
     },
   ],
+};
+
+export const karateKidCase = {
+  displayTitle: "Karate Kid: Legends × IMDb",
+  eyebrow: "Interactive Experience · April 2025",
+  finishedCampaign: "https://imdbcreativestudio.com/home/karate-kid",
+  finishedVideo: "https://vimeo.com/1147528182",
+  finishedVideoEmbed: "https://player.vimeo.com/video/1147528182",
+  heroMeta: [
+    { label: "Role", value: "Product / UX / Visual Designer" },
+    { label: "Timeline", value: "April 2025" },
+    { label: "Creative team", value: "IMDb Creative Studio / Amazon" },
+    { label: "Studio / advertiser", value: "Sony Pictures / Columbia Pictures" },
+    {
+      label: "Contribution",
+      value: "Initial experience · game mechanics · interaction design · production assets · Design Technology collaboration",
+    },
+    { label: "Platform", value: "IMDb Video Wall+ · web + mobile" },
+    { label: "Final campaign", value: "IMDb Creative Studio · 2025" },
+    { label: "Recognition", value: "Silver ADDY · 2026 · resulting campaign" },
+  ],
+  opportunity:
+    "Karate Kid is built around training, discipline, and progression. Instead of treating the IMDb takeover as another passive piece of movie advertising, we explored how the audience could participate in that training themselves. The concept turned the advertising surface into an interactive training experience.",
+  systemIntro:
+    "Precision, Balance, and Memory were designed as one training path — enter, choose a challenge, complete the set, and progress — not as three disconnected mini-games.",
+  mechanicsLead:
+    "The brief for my April 2025 work was behavioral as much as visual: how the games listen, respond, score, fail, and move the player forward.",
+  precision: {
+    principle: "Accuracy + timing + controlled response",
+    points: [
+      "Instruction state before the first strike",
+      "Directional block left / block right",
+      "Highlighted target on the dummy",
+      "Hit window, scoring, and miss count",
+      "Success, failure, and replay",
+    ],
+  },
+  balance: {
+    principle: "Control + equilibrium + sustained input",
+    points: [
+      "Continuous left / right correction",
+      "Keep the marker inside a target zone",
+      "Timer and out-of-zone feedback",
+      "Hold the stance to complete the drill",
+      "Success, failure, and replay",
+    ],
+  },
+  memory: {
+    principle: "Observe → remember → repeat",
+    points: [
+      "Sequence display",
+      "Player’s turn",
+      "Correct and incorrect response",
+      "Progression through the pattern",
+      "Completion of the drill",
+    ],
+    note: "Memory gameplay frames from the April 2025 build were not retained in the supplied files. The mechanic below is reconstructed from the original three-game system and the public final-production description — not from a surviving Memory screenshot.",
+  },
+  states: [
+    "Select game",
+    "Intro",
+    "Instructions",
+    "Active play",
+    "Feedback",
+    "Retry or success",
+    "Next challenge",
+    "Final completion",
+  ],
+  assetsLead:
+    "The interactive unit needed production art that could change state — not only finished marketing frames. I created and prepared supporting assets, then worked with Design Technology on what implementation required.",
+  collaboration:
+    "The experience required close collaboration between design and Design Technology. I worked through the mechanics, states, visual behaviors, and supporting assets while partnering with Design Technology to translate the concept into an interactive experience that could live within IMDb’s advertising environment.",
+  responsive:
+    "Desktop used keyboard and a wider Video Wall+ canvas. Mobile had to keep the same training logic with touch, thumb-reachable controls, and a tighter hierarchy — adapting the interaction model rather than shrinking the desktop layout. Original mobile frames were not in the supplied set; the public campaign later shipped Mobile Video Wall+ alongside web.",
+  handoff:
+    "The experience continued to evolve after my handoff. The finished campaign retained the central Precision, Balance, and Memory training framework while the continuing IMDb Creative Studio team refined and completed the final execution.",
+  timelineNote:
+    "My work preceded the final production. I contributed to the initial experience design, gameplay mechanics, and supporting assets in April 2025. Following my handoff, IMDb Creative Studio continued developing and refining the campaign. The resulting experience was subsequently recognized with a Silver ADDY in 2026.",
+  outcome:
+    "I worked on the foundational experience, game mechanics, and production assets in April 2025, collaborating with Design Technology before the project transitioned to the continuing production team. IMDb Creative Studio subsequently evolved and completed the experience for its international campaign. The final production retained the core Precision, Balance, and Memory training structure documented in my original work. In 2026, the resulting campaign received a Silver ADDY at the Los Angeles American Advertising Awards.",
+  publicFacts: [
+    "Web and mobile Video Wall+ campaign",
+    "Precision, Memory, and Balance training games",
+    "Localized in 6 languages",
+    "Launched in 10 countries across Europe and LATAM",
+    "Silver ADDY, 2026 Los Angeles American Advertising Awards",
+    "Category: Web Banner Ad / Website Takeover",
+  ],
+  contributions: [
+    "Initial experience design",
+    "Initial build / design development",
+    "Experience architecture",
+    "UX design",
+    "Interaction design",
+    "Game mechanics",
+    "Gameplay behaviors",
+    "Controls",
+    "Scoring + feedback",
+    "Game progression",
+    "Success / failure logic",
+    "Completion + reward states",
+    "Desktop UX",
+    "Mobile UX",
+    "Responsive interaction design",
+    "Visual design",
+    "Production asset creation",
+    "Asset preparation",
+    "Sprite / animation asset preparation",
+    "Design Technology collaboration",
+    "Presale design",
+    "Early production development",
+    "Production handoff",
+  ],
+  transparency:
+    "This case study focuses on the original experience design, initial build, game mechanics, and production assets I contributed at IMDb Creative Studio in April 2025. I developed the experience in collaboration with Design Technology before handing the project off for continued production. The final campaign subsequently evolved through the broader IMDb Creative Studio team.",
+  images: {
+    desktopExpanded: {
+      src: "/media/karate-kid/desktop-expanded.jpg",
+      alt: "Original April 2025 desktop concept: expanded IMDb Video Wall+ for Karate Kid: Legends above the homepage video rail.",
+    },
+    desktopCollapsed: {
+      src: "/media/karate-kid/desktop-collapsed.jpg",
+      alt: "Original April 2025 desktop concept: collapsed Video Wall+ treatment with Book Tickets still present in the header.",
+    },
+    gameSelect: {
+      src: "/media/karate-kid/game-select.jpg",
+      alt: "Game-select state with Precision, Balance, and Memory. Balance and Memory are inactive until the player completes the earlier challenges.",
+    },
+    precisionIntro: {
+      src: "/media/karate-kid/precision-intro.jpg",
+      alt: "Precision intro: Mr. Han on the garden path with the line about building kung fu into karate.",
+    },
+    precisionPlay: {
+      src: "/media/karate-kid/precision-play.jpg",
+      alt: "Precision gameplay: dummy with a highlighted target, left/right block controls, timer, score, and miss count.",
+    },
+    precisionWin: {
+      src: "/media/karate-kid/precision-win.jpg",
+      alt: "Precision success state: bonsai reward with the line the tree grows stronger.",
+    },
+    precisionLose: {
+      src: "/media/karate-kid/precision-lose.jpg",
+      alt: "Precision failure state: replay control beside Mr. Han, with Li Fong still present on the right.",
+    },
+    balanceIntro: {
+      src: "/media/karate-kid/balance-intro.jpg",
+      alt: "Balance intro: Mr. Miyagi with the line about building kung fu into karate for the second challenge.",
+    },
+    balancePlay: {
+      src: "/media/karate-kid/balance-play.jpg",
+      alt: "Balance gameplay: black ball on a wooden stick, tilt left/right controls, timer, and out-count.",
+    },
+    balanceWin: {
+      src: "/media/karate-kid/balance-win.jpg",
+      alt: "Balance success state: headband reward with the line let’s make a karate kid.",
+    },
+    balanceLose: {
+      src: "/media/karate-kid/balance-lose.jpg",
+      alt: "Balance failure state: replay control with Mr. Han and the city skyline behind the unit.",
+    },
+    sourceHands: {
+      src: "/media/karate-kid/source-hands.png",
+      alt: "Original production source art: two wireframe hands in open and two-finger poses, prepared for interaction states.",
+    },
+    keyArt: {
+      src: "/media/karate-kid/film-key-art.jpg",
+      alt: "Public film key art for Karate Kid: Legends, used here only as final-campaign context.",
+    },
+  },
 };
 
 export function getProject(slug: string) {
