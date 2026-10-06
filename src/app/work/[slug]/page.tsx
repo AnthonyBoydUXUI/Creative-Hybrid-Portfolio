@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { KarateKidBody } from "@/components/KarateKidBody";
+import { TeamStatusBody } from "@/components/TeamStatusBody";
 import {
   getProject,
   karateKidCase,
@@ -91,7 +92,16 @@ export default async function ProjectPage({ params }: Props) {
       </header>
 
       <div className="wrap" style={{ marginTop: "2rem" }}>
-        <div style={{ position: "relative", aspectRatio: "16 / 9", borderRadius: 16, overflow: "hidden" }}>
+        <div
+          className={slug === "team-status-system" ? "ts-hero" : undefined}
+          style={{
+            position: "relative",
+            aspectRatio: slug === "team-status-system" ? "16 / 10" : "16 / 9",
+            borderRadius: 16,
+            overflow: "hidden",
+            background: "#111",
+          }}
+        >
           {project.video ? (
             <video
               poster={project.hero}
@@ -104,12 +114,23 @@ export default async function ProjectPage({ params }: Props) {
               <source src={project.video} type="video/mp4" />
             </video>
           ) : (
-            <Image src={project.hero} alt={project.heroAlt} fill priority sizes="100vw" style={{ objectFit: "cover" }} />
+            <Image
+              src={project.hero}
+              alt={project.heroAlt}
+              fill
+              priority
+              sizes="100vw"
+              style={{
+                objectFit: slug === "team-status-system" ? "contain" : "cover",
+                objectPosition: "center",
+              }}
+            />
           )}
         </div>
       </div>
 
       <div className="wrap" style={{ padding: "3rem 0 4rem" }}>
+        {slug === "team-status-system" ? <TeamStatusBody /> : null}
         {slug === "karate-kid-legends" ? <KarateKidBody /> : null}
         {slug === "vehicle-onboarding" ? <VoaBody /> : null}
         {slug === "lioness" ? <LionessBody /> : null}
