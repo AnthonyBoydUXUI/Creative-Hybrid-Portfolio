@@ -11,7 +11,10 @@ export function ProjectCard({ project }: { project: Project }) {
           alt={project.thumbnailAlt}
           fill
           sizes="(max-width: 700px) 100vw, 50vw"
-          style={{ objectFit: "cover" }}
+          style={{
+            objectFit: project.slug === "team-status-system" ? "contain" : "cover",
+            objectPosition: "center",
+          }}
         />
       </div>
       <div className="card-body">

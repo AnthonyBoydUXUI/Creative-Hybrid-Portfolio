@@ -16,6 +16,23 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "team-status-system",
+    title: "Team-Status System",
+    subtitle: "Running process for a distributed engineering team",
+    year: "2026",
+    role: "Founder · process design",
+    client: "OurnAI",
+    summary:
+      "Three AI coding collaborators were working in parallel, each in its own thread. Without a shared source of truth I became the router. I designed an operating system that removes the founder from routine status relay while keeping a single decision-maker for anything ambiguous, risky, or irreversible.",
+    thumbnail: "/media/team-status/snapshot.jpg",
+    thumbnailAlt:
+      "Sanitized Team Status snapshot: three collaborator blocks with placeholder tasks. Live repository detail is omitted.",
+    hero: "/media/team-status/snapshot.jpg",
+    heroAlt:
+      "Sanitized Team Status document on a dark field, showing Purpose, Core principle, and Collaborator A, B, and C blocks with placeholder content.",
+    featured: true,
+  },
+  {
     slug: "karate-kid-legends",
     title: "Karate Kid: Legends",
     subtitle: "Interactive Experience · IMDb Creative Studio × Sony Pictures",
@@ -718,6 +735,63 @@ export const karateKidCase = {
       alt: "Public film key art for Karate Kid: Legends, used here only as final-campaign context.",
     },
   },
+};
+
+export const teamStatusCase = {
+  problem:
+    "Engineering work ran through three AI coding collaborators in parallel sessions — not one assistant switching contexts, but three independent agents, each holding its own thread, each able to open pull requests and make judgment calls in its lane. That setup is fast. The failure mode is obvious: without a shared source of truth, the founder becomes the router. Every status update, every “is this actually done,” every merge conflict and stalled thread has to pass through one person relaying context between conversations that cannot see each other.",
+  principle:
+    "The fix was not a better meeting cadence. It was removing the founder from the loop as the carrier of routine status, while keeping him as the one decision-maker for anything that is actually ambiguous, risky, or irreversible.",
+  origin:
+    "The system was not designed up front. It was pulled into existence by a specific failure: all three collaborators were editing shared sections of one status file, and their edits kept colliding — three merge conflicts in a single week. The constraint that ended the conflicts was structural: each collaborator owns a named block, and no one edits another’s block, ever. Git cannot conflict on lines that only one author ever touches.",
+  experiment:
+    "A second experiment ran in parallel: for one day, two collaborators had standing authority to merge their own verified pull requests, to see whether that sped things up without raising risk. It was used once, on a docs-only change, and expired on schedule. The standing rule since: collaborators open and fully verify their own pull requests; the founder reviews and merges.",
+  worksIntro:
+    "The system is two documents with deliberately different jobs, plus a small set of standing rules that tell collaborators when they can act alone and when they must stop.",
+  parts: [
+    {
+      title: "A live dashboard",
+      body: "One file, one section per collaborator, each holding exactly three bullets: what I’m doing right now, what I need a decision on, and what’s ready for review. It is overwritten, not appended, so it stays readable in under a minute. The founder reads it at set check-in points rather than continuously.",
+    },
+    {
+      title: "An append-only record",
+      body: "Every finding, decision, and incident gets a permanent, timestamped entry: what was found, what was decided, and why. The dashboard says what is true right now. This file says how it got that way. Nothing is deleted from it.",
+    },
+    {
+      title: "Standing permissions, scoped tightly",
+      body: "Collaborators may trigger routine deploys on their own judgment, and may contact a vendor’s support line when genuinely stuck — with a disclosure requirement every time, and hard boundaries: no public-facing communication, nothing that commits to cost, nothing beyond a one-day experiment without renewal. Default to visibility, not permission.",
+    },
+    {
+      title: "One true escalation rule",
+      body: "Anything a collaborator cannot resolve goes under its own “needs a decision” bullet, and work continues on everything else in that queue. The only thing that interrupts the founder directly, outside the check-in cadence, is active, ongoing harm — a live security exposure or data loss, not a routine blocker.",
+    },
+  ],
+  caught: [
+    {
+      title: "Reported “merged” did not mean “live.”",
+      body: "A change landed on the main branch and was marked done, but a separate deploy step failed silently because of an expired credential. Because the followups record exists, the gap between merged and deployed was caught and logged rather than assumed away.",
+    },
+    {
+      title: "An outside reviewer’s findings were reconciled, not just filed.",
+      body: "When an external engineer independently audited the codebase, the list was logged as an input, checked item-by-item against what was already fixed versus still open, and only then turned into tasks with an owner and a recorded decision.",
+    },
+    {
+      title: "A credential-rotation pattern got noticed instead of re-explained.",
+      body: "When two collaborators hit expired tokens on the same day in back-to-back weeks, that was flagged as a pattern worth investigating — not treated as two unrelated annoyances.",
+    },
+    {
+      title: "Risky one-day exceptions stayed one-day.",
+      body: "Because the current rule is explicit and dated, a temporary loosening of process did not quietly become the new normal.",
+    },
+  ],
+  why: [
+    "This is not a story about AI writing code. It is a story about designing the operating system that lets multiple autonomous agents work in parallel without a human becoming the bottleneck — and about the judgment calls that process required: when to let agents act without asking, when to force a stop, how to keep a record that survives tool turnover, and how to recover when a convention turned out to be wrong.",
+    "That is a product-management and engineering-leadership skill, not a coding one. It shows process written as a spec rather than a memo — the file is the enforcement mechanism — plus reversible experimentation, a bias toward keeping people moving, and a clean split between what is true now and why it is true. For anyone evaluating whether someone can run point on a multi-agent or multi-contractor engineering effort, this is direct evidence, not a claim.",
+  ],
+  snapshotNote:
+    "The live files contain open findings, private pull-request numbers, and account detail that do not belong in a public portfolio. What follows is the same structure with that detail replaced by placeholders — the mechanism, not a map of the live codebase.",
+  followupsNote:
+    "The companion followups log is simpler in shape: one dated, append-only entry per finding or decision, each stating what was found, what was decided, and why — never edited after the fact, only added to.",
 };
 
 export function getProject(slug: string) {
