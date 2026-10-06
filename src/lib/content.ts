@@ -23,7 +23,7 @@ export const projects: Project[] = [
     role: "Founder · process design",
     client: "OurnAI",
     summary:
-      "Three AI coding collaborators were working in parallel, each in its own thread. Without a shared source of truth I became the router. I designed an operating system that removes the founder from routine status relay while keeping a single decision-maker for anything ambiguous, risky, or irreversible.",
+      "Parallel work needed one decision-maker — and no human as the router. I designed an operating system that removes the founder from routine status relay while keeping a single person for anything ambiguous, risky, or irreversible.",
     thumbnail: "/media/team-status/snapshot.jpg",
     thumbnailAlt:
       "Sanitized Team Status snapshot: three collaborator blocks with placeholder tasks. Live repository detail is omitted.",
@@ -738,8 +738,10 @@ export const karateKidCase = {
 };
 
 export const teamStatusCase = {
-  problem:
-    "Engineering work ran through three AI coding collaborators in parallel sessions — not one assistant switching contexts, but three independent agents, each holding its own thread, each able to open pull requests and make judgment calls in its lane. That setup is fast. The failure mode is obvious: without a shared source of truth, the founder becomes the router. Every status update, every “is this actually done,” every merge conflict and stalled thread has to pass through one person relaying context between conversations that cannot see each other.",
+  problem: [
+    "The failure mode of parallel engineering is obvious once you have lived it: without a shared source of truth, one person becomes the router. Every status update, every “is this actually done,” every merge conflict and stalled thread has to pass through that person, relaying context between conversations that cannot see each other. The work is fast. The founder is not.",
+    "In this case the parallel work was three AI coding collaborators in independent sessions — not one assistant switching contexts, but three agents, each holding its own thread, each able to open pull requests and make judgment calls in its lane. That made the router problem acute, and it is what the system had to solve.",
+  ],
   principle:
     "The fix was not a better meeting cadence. It was removing the founder from the loop as the carrier of routine status, while keeping him as the one decision-maker for anything that is actually ambiguous, risky, or irreversible.",
   origin:

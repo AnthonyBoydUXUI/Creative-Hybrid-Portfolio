@@ -8,7 +8,11 @@ export function TeamStatusBody() {
     <div className="ts-body">
       <section>
         <h2>The problem</h2>
-        <p className="prose">{ts.problem}</p>
+        {ts.problem.map((paragraph) => (
+          <p className="prose" key={paragraph.slice(0, 48)}>
+            {paragraph}
+          </p>
+        ))}
         <p className="prose">{ts.principle}</p>
       </section>
 
